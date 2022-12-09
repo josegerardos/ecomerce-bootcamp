@@ -1,5 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Roboto&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
 .main-nav {
-  background-color: salmon;
+  background-color: rgb(152, 250, 114);
   color: white;
   height: 60px;
   display: flex;
