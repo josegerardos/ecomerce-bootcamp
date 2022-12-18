@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: black;
+  display: inline-block;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 .main-nav {
-  background-color: rgb(152, 250, 114);
+  background-color: rgb(114, 150, 250);
   color: white;
   height: 60px;
   display: flex;
@@ -36,4 +36,41 @@ body {
 .main-nav .nav-links .nav-item:hover {
   font-size: 1.2rem;
   color: darkred;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(184, 174, 174);
+}
+.footer__column {
+  padding: 1rem 1.5 rem;
+}
+.footer__contact-item {
+  list-style: none;
+}
+.footer__contact-link {
+  color: white;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__contact-icon {
+  font-size: 1.5rem;
+}
+.footer__contact-icon--facebook {
+  color: #058af0;
+}
+.footer__contact-icon--instagram {
+  color: #df4b5a;
+}
+.footer__contact-icon--linkedln {
+  color: #007aa5;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
