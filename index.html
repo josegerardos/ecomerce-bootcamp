@@ -13,11 +13,19 @@
 
     <!-- =====================================header================================================== -->
 
+<header class="header">
     <nav class="navbar">
         
             <a href="/index.html" class="navbar__nav-link">
-                <img class="navbar__logo" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" width="50px">
+                <img class="navbar__logo" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" width= 50px>
             </a>
+            <!-- ========================btn desplegable========================================== -->
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn" >
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+            
+
             <ul class="navbar__nav-links-container">
                 <li class="navbar__nav-item">
                     <a href="/index.html" class="navbar__nav-link">Inicio</a>
@@ -95,6 +103,54 @@
                     </div>
                 </div>
             </article>
+            <article class="card">
+                <div class="card__header">
+                    <img src="#" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                    <div class="card__title">
+                        PRODUCT NAME
+                    </div>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor tempora dolorem soluta corporis aliquid voluptatum asperiores a eaque culpa.
+                    </p>
+                    <div class="card__price">
+                        $ XXXXX
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__date">
+                        13/12/2022
+                    </div>
+                    <div class="card__btn-container">
+                        <a class="card__btn" href="">DETALLE</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                    <img src="#" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                    <div class="card__title">
+                        PRODUCT NAME
+                    </div>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor tempora dolorem soluta corporis aliquid voluptatum asperiores a eaque culpa.
+                    </p>
+                    <div class="card__price">
+                        $ XXXXX
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="card__date">
+                        13/12/2022
+                    </div>
+                    <div class="card__btn-container">
+                        <a class="card__btn" href="">DETALLE</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 </main>
@@ -113,17 +169,24 @@
                 <a href="" class="footer__contact-link">
                     <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
                     Facebook
+        <i class="fa-brands fa-facebook footer__contact-icon">
+        </i>
+                Facebook
                 </a>
             </li>
             <li class="footer__contact-item">
+                
                 <a href="" class="footer__contact-link">
                     <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram"></i>
+                    <i class="fa-brands fa-instagram footer__contact-icon">
+                    </i>
                     Instagram
                 </a>
             </li>
             <li class="footer__contact-item">
                 <a href="" class="footer__contact-link">
                     <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedln"></i>
+                    <i class="fa-brands fa-linkedin footer__contact-icon"></i>
                     Linkedln
                 </a>
             </li>
@@ -134,6 +197,7 @@
         <h2 class="footer__company-name">
             Holy surf
         </h2>
+        <h1 class="footer__company-name">Holy surf</h1>
         <p class="footer__copyright">
             Todos los derechos reservados a holy surf
         </p>
@@ -141,21 +205,32 @@
     <div class="footer__column">
         <ul class="footer__contact-container">
             <li class="footer__contact-item">
+                
                 <a href="" class="footer__contact-link">
                     <i class="fa-solid fa-phone footer__contact-icon"></i>
                     1170071163
+                    <i class="fa-solid fa-phone footer__contact-icon">
+                    </i>
+                    Telefono
                 </a>
             </li>
             <li class="footer__contact-item">
+                
                 <a href="" class="footer__contact-link">
                     <i class="fa-solid fa-location-dot footer__contact-icon"></i>
                     Saavedra 1874 General San Martin provincia de buenos aires
+                    <i class="fa-solid fa-location-dot footer__contact-icon">
+                    </i>
+                    Localizacion
                 </a>
             </li>
             <li class="footer__contact-item">
                 <a href="" class="footer__contact-link">
                     <i class="fa-solid fa-envelope footer__contact-icon"></i>
                     gerardo1801@gmail.com
+                    <i class="fa-solid fa-envelope footer__contact-icon">
+                    </i>
+                    email
                 </a>
             </li>
         </ul>
