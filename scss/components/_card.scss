@@ -1,0 +1,57 @@
+.card{
+    margin: 1rem;
+    border: 1px solid red ;
+
+
+
+    &__header{
+        height: 120px;
+        background-color: orangered;
+
+    }
+    &__img{
+        height: 120px;
+        object-fit: cover;
+
+    }
+    &__body{
+        padding: 1rem;
+
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-bottom: 2px solid yellow;
+
+    }
+    &__description{
+        padding: 2rem 0;
+
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: green;
+
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        
+
+    }
+    &__date{
+        color: gray;
+
+    }
+    &__btn-container{
+        padding: 1rem 1.25rem;
+        background-color: pink;
+        color: rgb(0, 0, 0);
+
+    }
+    &__btn{
+
+    }
+}

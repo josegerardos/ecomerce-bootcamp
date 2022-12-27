@@ -1,6 +1,7 @@
 .header{
      position: fixed;
      width: 100%;
+     top: 0;
 }
 .navbar{
      height: 50px;
@@ -13,7 +14,6 @@
      }
      &__menu-label{
      color: rgb(184, 73, 178);
-     margin-left: auto;
      height: 42%;
      background-color: aquamarine;
      width: 44px;
@@ -78,12 +78,20 @@
      }
      &__nav-item{
      padding: .75rem 1rem;
-     &:not(:last-child){
-          // border-bottom: 1px solid white;
-     }
      }
      &__nav-link{
      color: $color-text-ligth;
+     }
+}
+.user-navbar{
+     margin-left: auto;
+     color: white;
+     display: flex;
+     gap: .5rem;
+     align-items: center;
+     padding: 0 1rem;
+     &__user-avatar{
+     width: 40px;
      }
 }
 @media screen and (min-width: 600px){
@@ -99,6 +107,9 @@
                
 
           }
+     }
+     .user-navbar{
+          order: 3;
      }
 }
 
