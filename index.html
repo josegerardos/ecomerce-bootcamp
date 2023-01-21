@@ -15,40 +15,37 @@
 
 <header class="header">
     <nav class="navbar">
-        
-            <a href="/index.html" class="navbar__nav-link">
-                <img class="navbar__logo" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" width= 50px>
+            <a href="/index.html" class="navbar__nav-link" target="_blank">
+            <img class="navbar__logo" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" width= 50px>
             </a>
             <!-- =========================USER_NAVBAR====================================================== -->
             <div class="user-navbar">
-                <div class="user-navbar__cart-icon-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <div class="user-navbar__user-avatar-container">
-                    <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar__user-avatar " alt="Imagen de usuario">
-                </div>
+            <div class="user-navbar__cart-icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="user-navbar__user-avatar-container">
+            <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar__user-avatar " alt="Imagen de usuario">
+            </div>
             </div>
             <!-- ========================btn desplegable========================================== -->
             <input type="checkbox" class="navbar__menu-btn" id="menu-btn" >
             <label for="menu-btn" class="navbar__menu-label">
-                <span class="navbar__menu-icon"></span>
+            <span class="navbar__menu-icon"></span>
             </label>
-            
-
-            <ul class="navbar__nav-links-container">
-                <li class="navbar__nav-item">
-                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
-                </li>
-                <li class="navbar__nav-item">
-                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
-                </li>
-                <li class="navbar__nav-item">
-                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
-                </li>
-                <li class="navbar__nav-item">
-                    <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
-                </li>
-            </ul>
+        <ul class="navbar__nav-links-container">
+            <li class="navbar__nav-item">
+            <a href="/index.html" class="navbar__nav-link" target="_blank">Inicio</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+            </li>
+        </ul>
     </nav>
     
 </header>
@@ -59,173 +56,337 @@
 <main class="main">
     <section class="section-cards">
         <header class="section-cards__header">
-            <div class="section-cards__title-container">
-            <h1 class="section-cards__title">Lorem ipsum dolor sit amet.
-            </h1>
-            <p class="section-cards__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quisquam iusto amet ad ipsum illum!
-            </p>
-            </div>
-            <div class="section-cards__products-search-container">
-                <div class="product-search">
-                    <label for="" class="product-search__label">Buscar</label>
-                    <input type="text" class="product-search__input">
-                    <button class="product-search__btn">Buscar</button>
-
-
-                </div>
-                <div class="section-cards__products-count">
-                    Se encontraron X productos
-                </div>
-            </div>
+        <div class="section-cards__title-container">
+        <h1 class="section-cards__title">Holy surf
+        </h1>
+        <p class="section-cards__subtitle">Hacemos tablas en diferentes medidas con el diseño que tu elijas
+        </p>
+        </div>
+        <div class="section-cards__products-search-container">
+        <div class="product-search">
+        <label for="buscar" class="product-search__label">Buscar</label>
+        <input type="text" name="buscar" class="product-search__input" size="32px" id="buscar" >
+        <button class="product-search__btn">Buscar</button>
+        </div>
+        <div class="section-cards__products-count">
+        Se encontraron X productos
+        </div>
+        </div>
         </header>
         <h1 class="section-cards__category">
             CATEGORIA: OFERTAS
         </h1>
+        <!-- =====================================card===================================================== -->
         <div class="cards-container">
             <article class="card">
                 <div class="card__header">
-                    <img src="#" alt="product image" class="card__img">
+                <img src="/assets/product-img/img 1 png.png" alt="product image" class="card__img">
                 </div>
                 <div class="card__body">
-                    <div class="card__title">
-                        PRODUCT NAME
-                    </div>
-                    <p class="card__description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor tempora dolorem soluta corporis aliquid voluptatum asperiores a eaque culpa.
-                    </p>
-                    <div class="card__price">
-                        $ XXXXX
-                    </div>
+                <div class="card__title">
+                All round
+                </div>
+                <p class="card__description">
+                Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.
+                </p>
+                
+                <div class="card__price">
+                $ 80000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                
                 </div>
                 <div class="card__footer">
-                    <div class="card__date">
-                        13/12/2022
-                    </div>
-                    <div class="card__btn-container">
-                        <a class="card__btn" href="">DETALLE</a>
-                    </div>
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
                 </div>
             </article>
             <article class="card">
                 <div class="card__header">
-                    <img src="#" alt="product image" class="card__img">
+                <img src="/assets/product-img/img 2 png.png" alt="product image" class="card__img">
                 </div>
                 <div class="card__body">
-                    <div class="card__title">
-                        PRODUCT NAME
-                    </div>
-                    <p class="card__description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor tempora dolorem soluta corporis aliquid voluptatum asperiores a eaque culpa.
-                    </p>
-                    <div class="card__price">
-                        $ XXXXX
-                    </div>
+                <div class="card__title">
+                Touring
+                </div>
+                <p class="card__description">
+                Tabla de surf soft top 7'2, las más usadas para realizar travesías o largos recorridos.
+                </p>
+                <div class="card__price">
+                $ 82000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
                 </div>
                 <div class="card__footer">
-                    <div class="card__date">
-                        13/12/2022
-                    </div>
-                    <div class="card__btn-container">
-                        <a class="card__btn" href="">DETALLE</a>
-                    </div>
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
                 </div>
             </article>
             <article class="card">
                 <div class="card__header">
-                    <img src="#" alt="product image" class="card__img">
+                <img src="/assets/product-img/img 3 png.png" alt="product image" class="card__img">
                 </div>
                 <div class="card__body">
-                    <div class="card__title">
-                        PRODUCT NAME
-                    </div>
-                    <p class="card__description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor tempora dolorem soluta corporis aliquid voluptatum asperiores a eaque culpa.
-                    </p>
-                    <div class="card__price">
-                        $ XXXXX
-                    </div>
+                <div class="card__title">
+                Racing
+                </div>
+                <p class="card__description">
+                Tabla de surf 7.0 evo G-boards 8', presenta soporte y anclaje y por lo tanto permite maniobras rápidas.
+                </p>
+                <div class="card__price">
+                $ 79000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
                 </div>
                 <div class="card__footer">
-                    <div class="card__date">
-                        13/12/2022
-                    </div>
-                    <div class="card__btn-container">
-                        <a class="card__btn" href="">DETALLE</a>
-                    </div>
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>                
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 4 jpg.jpg" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Yoga
+                </div>
+                <p class="card__description">
+                Tabla de surf soft shockn pro superwide 7, excelente para la yoga en la playa,son livianas y consta de buena amortiguación. 
+                </p>
+                <div class="card__price">
+                $ 69000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 5 png.webp" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Sub/surf
+                </div>
+                <p class="card__description">
+                Tabla de surf soft blue pro wide 8', muy versátil gracias a su diseño es la más utilizada para travesías de olas con poca fuerza.
+                </p>
+                <div class="card__price">
+                $ 76000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 6 png.png" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Windsup
+                </div>
+                <p class="card__description">
+                Tabla de surf soft 8'0 art mar cristal, sirve para las travesías tipo paddle surf y por su rígidez para otras disciplinas. 
+                </p>
+                <div class="card__price">
+                $ 72000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 7 png.png" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Desmontables
+                </div>
+                <p class="card__description">
+                Tabla de surf g-boards 212cm bic sport tahe, o modulares tipo de material polietileno, para obtener velocidad y fluidez.
+                </p>
+                <div class="card__price">
+                $ 68000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 8 png.png" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Evolution
+                </div>
+                <p class="card__description">
+                Tabla de surf expoxy xtorsion 5'8 x 21.5, adecuada para principiantes ya q ofrecen mas flotabilidad, estabilidad y mayor facilidad para girar.
+                </p>
+                <div class="card__price">
+                $ 70000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header">
+                <img src="/assets/product-img/img 9 png.jpg" alt="product image" class="card__img">
+                </div>
+                <div class="card__body">
+                <div class="card__title">
+                Longboard
+                </div>
+                <p class="card__description">
+                Tabla de surf mar cristal 6'soft alta densidad, esta diseñada para la estabilidad máxima, mayor volumen y mayor deslizamiento.
+                </p>
+                <div class="card__price">
+                $ 65000
+                </div>
+                <div class="card__date">
+                13/12/2022
+                </div>
+                </div>
+                <div class="card__footer">
+                <div class="card__btn-buy-container">
+                <a class="card__btn-buy" href="">Comprar</a>
+                </div>
+                <div class="card__btn-container">
+                <a class="card__btn" href="">Detalle</a>
+                </div>
                 </div>
             </article>
         </div>
     </section>
 </main>
 <div class="whatsapp-container">
-    <a href="" class="whatsapp-container__link">
-        <img src="#" alt="Whatsapp contac link" class="whatsapp-container__img">
+    <a href=" https://walink.co/f5a1de " class="whatsapp-container__link">
+        <img src=" https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png  " alt=" Logo de Whatsapp " class="whatsapp-container__img">
     </a>
 </div>
 
 <!-- ================================================footer======================================= -->
 
 <footer class="footer">
+<div class="footer__column">
+    <ul class="footer__contact-container">
+        <li class="footer__contact-item">
+        <a href="" class="footer__contact-link">
+        <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
+        Facebook
+        </a>
+        </li>
+        <li class="footer__contact-item">        
+        <a href="" class="footer__contact-link">
+        <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram"></i>
+        Instagram
+        </a>
+        </li>
+        <li class="footer__contact-item">
+        <a href="" class="footer__contact-link">
+        <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedln"></i>
+        Linkedln
+        </a>
+        </li>
+    </ul>
+    </div>
+    <div class="footer__column">
+    <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer__logo" width="50px">
+    <h2 class="footer__company-name">
+    Holy surf
+    </h2>
+    <p class="footer__copyright">
+    Todos los derechos reservados a holy surf
+    </p>
+    </div>
     <div class="footer__column">
     <ul class="footer__contact-container">
-            <li class="footer__contact-item">
-                <a href="" class="footer__contact-link">
-                    <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>
-                    Facebook
-        
-                </a>
-            </li>
-            <li class="footer__contact-item">
-                
-                <a href="" class="footer__contact-link">
-                    <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram"></i>
-                    
-                    Instagram
-                </a>
-            </li>
-            <li class="footer__contact-item">
-                <a href="" class="footer__contact-link">
-                    <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedln"></i>
-                    
-                    Linkedln
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer__column">
-        <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer__logo" width="50px">
-        <h2 class="footer__company-name">
-            Holy surf
-        </h2>
-        <p class="footer__copyright">
-            Todos los derechos reservados a holy surf
-        </p>
-    </div>
-    <div class="footer__column">
-        <ul class="footer__contact-container">
-            <li class="footer__contact-item">
-                
-                <a href="" class="footer__contact-link">
-                    <i class="fa-solid fa-phone footer__contact-icon"></i>
-                    1170071163
-                </a>
-            </li>
-            <li class="footer__contact-item">
-                
-                <a href="" class="footer__contact-link">
-                    <i class="fa-solid fa-location-dot footer__contact-icon"></i>
-                    Saavedra 1874 General San Martin provincia de buenos aires
-                    
-                </a>
-            </li>
-            <li class="footer__contact-item">
-                <a href="" class="footer__contact-link">
-                    <i class="fa-solid fa-envelope footer__contact-icon"></i>
-                    gerardo1801@gmail.com
-                    
-                </a>
-            </li>
-        </ul>
+        <li class="footer__contact-item">
+        <a href="" class="footer__contact-link">
+        <i class="fa-solid fa-phone footer__contact-icon"></i>
+        1170071163
+        </a>
+        </li>
+        <li class="footer__contact-item">       
+        <a href="" class="footer__contact-link">
+        <i class="fa-solid fa-location-dot footer__contact-icon"></i>
+        Saavedra 1874 General San Martin provincia de buenos aires
+        </a>
+        </li>
+        <li class="footer__contact-item">
+        <a href="" class="footer__contact-link">
+        <i class="fa-solid fa-envelope footer__contact-icon"></i>
+        gerardo1801@gmail.com
+        </a>
+        </li>
+    </ul>
     </div>
 </footer>
 </body>

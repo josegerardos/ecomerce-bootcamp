@@ -26,47 +26,111 @@ body {
 }
 
 .card {
-  margin: 1rem;
-  border: 1px solid red;
+  margin: 20px;
+  background-color: transparent;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 .card__header {
-  height: 120px;
-  background-color: orangered;
+  height: 250px;
+  background-color: transparent;
+  text-align: center;
+  padding: auto;
 }
 .card__img {
-  height: 120px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  text-align: center;
 }
 .card__body {
   padding: 1rem;
+  flex-grow: 1;
+  position: relative;
 }
 .card__title {
-  font-weight: 500;
+  padding-top: 1.5rem;
+  font-weight: 400;
   font-size: 1.5rem;
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #0070BB;
+  text-align: center;
 }
 .card__description {
   padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.5;
 }
 .card__price {
-  font-weight: 500;
-  font-size: 1.25rem;
-  color: green;
+  color: black;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
 }
 .card__footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 .card__date {
-  color: gray;
+  color: rgb(184, 174, 174);
+  position: absolute;
+  bottom: 0;
+  left: 10px;
 }
 .card__btn-container {
-  padding: 1rem 1.25rem;
-  background-color: pink;
-  color: rgb(0, 0, 0);
+  color: black;
+  margin: 0.75rem;
 }
+.card__btn {
+  padding: 8px;
+  color: #0070BB;
+  border: 1px solid #0070BB;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card__btn:hover {
+  background-color: #0070BB;
+  color: white;
+}
+.card__btn-buy-container {
+  margin: 0.75rem;
+}
+.card__btn-buy {
+  padding: 8px;
+  color: #0070BB;
+  border: 1px solid #0070BB;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card__btn-buy:hover {
+  background-color: #0070BB;
+  color: white;
+}
+.card__btn-buy .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-container {
+  position: fixed;
+  right: 15px;
+  bottom: 50px;
+}
+.whatsapp-container__img {
+  width: 75px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -75,7 +139,7 @@ body {
 
 .navbar {
   height: 50px;
-  background-color: grey;
+  background-color: #0070BB;
   display: flex;
   align-items: center;
   position: relative;
@@ -176,6 +240,7 @@ body {
     flex-direction: row;
     height: 100% !important;
     width: auto;
+    background-color: #0070BB;
   }
   .user-navbar {
     order: 3;
@@ -185,6 +250,7 @@ body {
   margin-top: 50px;
   padding: 1.5rem 0;
   background-color: aliceblue;
+  flex-grow: 1;
 }
 
 .footer {
@@ -224,22 +290,63 @@ body {
     justify-content: space-evenly;
   }
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .section-cards__header {
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
 }
+.section-cards__title {
+  font-family: cursive;
+  color: #0070BB;
+}
 .section-cards__subtitle {
-  color: rgb(255, 0, 221);
   font-size: 1rem;
+  padding-left: 1rem;
+}
+.section-cards__category {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+.section-cards__products-count {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
 }
 .section-cards__products-search-container {
   padding: 1rem;
-  background-color: yellowgreen;
 }
-.section-cards .cards-container {
+
+.product-search__btn {
+  border: 1px #0070BB;
+  border-radius: 4px;
+  padding: 1px 10px;
+  background-color: #0070BB;
+  color: white;
+}
+.product-search__label {
+  font-size: 0.75rem;
+}
+.product-search__input {
+  color: #0070BB;
+  padding: 1px 10px;
+  border: 1px solid #0070BB;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.product-search__input:hover {
+  background-color: #0070BB;
+  color: white;
+}
+
+.cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 @media screen and (min-width: 1000px) {

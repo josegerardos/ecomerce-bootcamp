@@ -1,28 +1,108 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .section-cards{
     &__header{
         text-transform: uppercase;
         font-size: 1.5rem;
         text-align: center;
     }
+    &__title{
+        font-family:cursive;
+        color:$color-bg-secundary;
+        
+    }
     &__subtitle{
-        color: rgb(255, 0, 221);
         font-size: 1rem;
+        padding-left: 1rem;
+    }
+    &__category{
+        padding: 1rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: $color-bg-primary;
+    }
+    &__products-count{
+        font-size: .75rem;
+        padding-top: .5rem;
+
+        
+
     }
     &__products-search-container{
-        padding: 1rem;
-        background-color: yellowgreen;
+        padding: 1rem;}
+   
+
+    
+    
     }
+
+    .product-search{
+        
+        &__btn{
+            border: 1px $color-bg-secundary;
+            border-radius: 4px;
+            padding: 1px 10px;
+            background-color:$color-bg-secundary ;
+            color:$color-text-ligth ;
+        }
+        &__label{
+            font-size: .75rem;
+        
+        }
+        &__input{
+            
+            color:$color-bg-secundary ;
+            padding:1px 10px;
+            border:1px solid $color-bg-secundary ;
+            border-radius: 4px;
+            transition: all 400ms ease;
+            &:hover{
+                background-color: $color-bg-secundary;
+                color: white;}
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+            
+        
+    }
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
 
     .cards-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) ;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) ;
     }
 
+    
 
-
-
-
-    }
     @media screen and (min-width: 1000px){
         .section-cards{
             &__header{
