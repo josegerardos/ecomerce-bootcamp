@@ -29,7 +29,6 @@ body {
   margin: 20px;
   background-color: transparent;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   border-radius: 6px;
   overflow: hidden;
@@ -42,13 +41,13 @@ body {
   transform: translateY(-3%);
 }
 .card__header {
-  height: 250px;
+  height: 200px;
   background-color: transparent;
   text-align: center;
   padding: auto;
 }
 .card__img {
-  height: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
@@ -124,17 +123,18 @@ body {
 
 .whatsapp-container {
   position: fixed;
-  right: 15px;
-  bottom: 50px;
+  right: 25px;
+  bottom: 300px;
 }
 .whatsapp-container__img {
-  width: 75px;
+  width: 70px;
 }
 
 .header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .navbar {
@@ -256,10 +256,16 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(184, 174, 174);
+  background-color: #0070BB;
+  padding: 10px;
+  position: relative;
 }
-.footer__column {
-  padding: 1rem 1.5 rem;
+.footer__logo {
+  margin-left: 10px;
+}
+.footer__company-name {
+  color: white;
+  font-family: cursive;
 }
 .footer__contact-item {
   list-style: none;
@@ -272,7 +278,7 @@ body {
   gap: 0.5rem;
 }
 .footer__contact-icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .footer__contact-icon--facebook {
   color: #058af0;
@@ -281,13 +287,31 @@ body {
   color: #df4b5a;
 }
 .footer__contact-icon--linkedln {
-  color: #007aa5;
+  color: #058af0;
+}
+.footer__contact-icon--copyright {
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
 }
 
 @media screen and (min-width: 600px) {
   .footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+  }
+  .footer__logo {
+    margin-left: 13px;
+  }
+  .footer__contact-icon--copyright {
+    font-size: 8px;
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
   }
 }
 body {

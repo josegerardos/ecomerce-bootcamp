@@ -2,7 +2,6 @@
     margin: 20px;
     background-color: transparent;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     border-radius: 6px;
     overflow: hidden;
@@ -21,7 +20,7 @@
 
 
     &__header{
-        height: 250px;
+        height: 200px;
         background-color: transparent;
         text-align: center;
         padding:auto;
@@ -29,7 +28,7 @@
     }
     &__img{
         
-        height: 250px;
+        height: 200px;
         object-fit: cover;
         text-align: center;
 
