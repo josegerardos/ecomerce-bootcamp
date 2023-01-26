@@ -320,6 +320,109 @@ body {
   flex-direction: column;
 }
 
+.header-contact {
+  background-color: #0070BB;
+  padding: 1rem;
+}
+
+.main-contact {
+  background-image: url(/assets/images-pages/image1.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form-container-contact {
+  padding: 1rem 1rem 0;
+}
+
+.form-contact {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.form-contact__nav-input {
+  color: white;
+  padding: 2rem 0;
+}
+.form-contact:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.form-contact__label {
+  color: white;
+  padding: 0.5rem;
+}
+.form-contact__input {
+  padding: 0.25rem;
+  margin: 0.4rem 0;
+  background-color: transparent;
+  outline: 1px solid #0070BB;
+  border: none;
+  border-radius: 4px;
+}
+.form-contact__textarea {
+  margin: 0.4rem 0;
+  padding: 0.25rem;
+  background-color: transparent;
+  outline: 1px solid #0070BB;
+  border-radius: 4px;
+}
+.form-contact__footer-btn {
+  color: black;
+  margin-top: 0.4rem 0;
+}
+.form-contact__btn-contact {
+  padding: 8px;
+  color: #0070BB;
+  border: 1px solid #0070BB;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.form-contact__btn-contact:hover {
+  background-color: #0070BB;
+  color: white;
+}
+
+.iframe-container {
+  margin-bottom: 1rem;
+}
+.iframe-container__nav-iframe {
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-contact {
+  background-color: #0070BB;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .form-container-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+  .main-contact {
+    flex-grow: 1;
+  }
+  .form-contact__nav-input {
+    padding-left: 1rem;
+  }
+  .form-contact__input {
+    padding-left: 1rem;
+  }
+  .iframe-container__img {
+    width: 400px;
+    height: 285px;
+  }
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .section-cards__header {
   text-transform: uppercase;
   font-size: 1.5rem;

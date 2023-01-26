@@ -89,7 +89,7 @@
     
     }
     &__btn-container{
-        color: black;
+        color: $color-bg-primary;
         margin: .75rem;
         
         }
@@ -102,7 +102,7 @@
         transition: all 400ms ease;
         &:hover{
             background-color: $color-bg-secundary;
-            color: white;
+            color: $color-text-ligth;
         }
         
         
