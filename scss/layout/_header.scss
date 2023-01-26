@@ -15,9 +15,9 @@
      height: 45px;
      }
      &__menu-label{
-     color: rgb(184, 73, 178);
+     color: $color-text-ligth;
      height: 42%;
-     background-color: aquamarine;
+     // background-color: $color-dark-gray;
      width: 44px;
      margin-right: 4px;
      display: flex;
@@ -47,13 +47,13 @@
      }
      &__menu-icon{
      height: 2px;
-     background-color: orangered;
+     background-color: $color-text-ligth;
      width: 18px;
      position: relative;
      &::after, &::before{
           content: "";
           height: 2px;
-          background-color: orangered;
+          background-color: $color-text-ligth;
           position: absolute;
           width: 100%;
           transition: all .2s ease-out;
@@ -87,14 +87,15 @@
 }
 .user-navbar{
      margin-left: auto;
-     color: white;
+     color: $color-text-ligth;
      display: flex;
      gap: .5rem;
      align-items: center;
      padding: 0 1rem;
      &__user-avatar
      {
-     width: 40px;
+     width: 35px;
+     
      }
 }
 @media screen and (min-width: 600px){
