@@ -136,78 +136,61 @@ body{
     .user-navbar-about{
     order: 3;
     }
-}
-// ======================================================
+    }
+
 .main-about{
-    background-image: url(/assets/images-pages/image3.jpg);
-    background-size: cover;
-    object-fit: cover;
-    flex-grow: 1;
+background-image: url(/assets/images-pages/image3.jpg);
+background-size: cover;
+object-fit: cover;
+flex-grow: 1;
 }
 .about-tittle{
-    margin-top: 50px;
-    padding: 10px;
-    text-align: center;
-    font-family: cursive;
+margin-top: 50px;
+padding: 10px;
+text-align: center;
+font-family: cursive;
 }
-
-
 .about-container{
-     
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-left: 40px;
+justify-content: center;
+align-items: center;
+width: 80%;
+margin-left: 40px;
 text-align: justify;
-
-
 &__text{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    text-shadow: 2px 2px 1px 1px black;
-    
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 15px;
+text-shadow: 2px 2px 1px 1px black;
 }
 &__subtittle{
-    text-align: center;
-    padding: 10px;
-    font-family: cursive;  
+text-align: center;
+padding: 10px;
+font-family: cursive;  
 }
 }
-
 @media screen and(min-width:600px){
     .main-about{
         position: relative;
-    }
+        }
     .about-container{
         &__text-about{
-            width: 30%;
-            position: absolute;
-            left:25rem ;
+        width: 30%;
+        position: absolute;
+        left:25rem ;
         }
         &__vision{
-            position: absolute;
-            width: 20%;
-            bottom: 2rem;
-            left: 28rem;
-        
+        position: absolute;
+        width: 20%;
+        bottom: 2rem;
+        left: 28rem;
         }
         &__mission{
-            width: 20%;
-            position: absolute;
-            right: 5rem;
-            top: 5rem;
-            
-            
-            
-
+        width: 20%;
+        position: absolute;
+        right: 5rem;
+        top: 5rem;
         }
-    }
-}
-
-
-// ========================================FOOTER=====================================
-
-
+        }
+        }
 
 .footer-about{
     display: grid;
@@ -260,6 +243,7 @@ text-align: justify;
         flex-direction: row;
         justify-content: space-evenly;
         position: relative;
+        overflow: hidden;
         &__logo-about{
         margin-left: 13px;
         }

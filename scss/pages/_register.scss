@@ -183,11 +183,6 @@ color: $color-text-ligth;
 }
 }    
 }
-
-.footer-principal{
-background-color: $color-bg-secundary;
-padding: 1rem;
-}
 .main-form{
 padding: 4rem 1rem;
 flex-grow: 1;
@@ -200,3 +195,69 @@ border-bottom: 1px solid $color-bg-secundary;
 margin-bottom: 1rem;
 }
 }
+
+.footer-form{
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-bg-secundary;
+    padding: 10px;
+    position: relative;
+    &__logo-about{
+    margin-left: 10px;
+    }
+    &__company-name-form{
+    color:$color-text-ligth;
+    font-family: cursive;    
+    }
+    &__contact-item-form{
+    list-style: none;
+    }
+    &__contact-link-form{
+    color: $color-text-ligth;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    }
+    &__contact-icon-form{
+    font-size: 1rem ;
+    &--facebook-form{
+        color: $color-text-ligth ;
+    }
+    &--instagram-form{
+    color:$color-text-ligth ;
+    }
+    &--linkedln-form{
+    color: $color-text-ligth ;
+    }
+    &--copyright-form{
+    color:$color-text-ligth ;
+    font-size: .75rem;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    
+    }
+    }
+}
+@media screen and (min-width: 600px) {
+    .footer-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    &__logo-form{
+    margin-left: 13px;
+    }
+    &__contact-icon-form{
+    &--copyright-form{
+    font-size: 8px;
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
+    }
+    }
+    }
+    }

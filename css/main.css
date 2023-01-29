@@ -324,6 +324,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
+    overflow: hidden;
   }
   .footer__logo {
     margin-left: 13px;
@@ -579,6 +580,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
+    overflow: hidden;
   }
   .footer-about__logo-about {
     margin-left: 13px;
@@ -814,6 +816,69 @@ body {
   .iframe-container__img {
     width: 400px;
     height: 285px;
+  }
+}
+.footer-contact {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  background-color: #0070BB;
+  padding: 10px;
+  position: relative;
+}
+.footer-contact__logo-contact {
+  margin-left: 10px;
+}
+.footer-contact__company-name-contact {
+  color: white;
+  font-family: cursive;
+}
+.footer-contact__contact-item-contact {
+  list-style: none;
+}
+.footer-contact__contact-link-contact {
+  color: white;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-contact__contact-icon-contact {
+  font-size: 1rem;
+}
+.footer-contact__contact-icon-contact--facebook-contact {
+  color: white;
+}
+.footer-contact__contact-icon-contact--instagram-about-contact {
+  color: white;
+}
+.footer-contact__contact-icon-contact--linkedln-contact {
+  color: white;
+}
+.footer-contact__contact-icon-contact--copyright-contact {
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-contact__logo-contact {
+    margin-left: 13px;
+  }
+  .footer-contact__contact-icon-contact--copyright-about {
+    font-size: 8px;
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
   }
 }
 body {
@@ -1064,11 +1129,6 @@ body {
   color: white;
 }
 
-.footer-principal {
-  background-color: #0070BB;
-  padding: 1rem;
-}
-
 .main-form {
   padding: 4rem 1rem;
   flex-grow: 1;
@@ -1080,4 +1140,68 @@ body {
   text-align: center;
   border-bottom: 1px solid #0070BB;
   margin-bottom: 1rem;
+}
+
+.footer-form {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  background-color: #0070BB;
+  padding: 10px;
+  position: relative;
+}
+.footer-form__logo-about {
+  margin-left: 10px;
+}
+.footer-form__company-name-form {
+  color: white;
+  font-family: cursive;
+}
+.footer-form__contact-item-form {
+  list-style: none;
+}
+.footer-form__contact-link-form {
+  color: white;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-form__contact-icon-form {
+  font-size: 1rem;
+}
+.footer-form__contact-icon-form--facebook-form {
+  color: white;
+}
+.footer-form__contact-icon-form--instagram-form {
+  color: white;
+}
+.footer-form__contact-icon-form--linkedln-form {
+  color: white;
+}
+.footer-form__contact-icon-form--copyright-form {
+  color: white;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-form__logo-form {
+    margin-left: 13px;
+  }
+  .footer-form__contact-icon-form--copyright-form {
+    font-size: 8px;
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

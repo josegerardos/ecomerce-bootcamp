@@ -1,7 +1,7 @@
 body{
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-contact{
@@ -145,7 +145,7 @@ flex-direction: column;
     flex-grow: 1;   
 }
 .form-container-contact{
-padding: 1rem 1rem 0;    
+    padding: 1rem 1rem 0;    
 }
 .form-contact{
 &__nav-input{
@@ -226,3 +226,69 @@ height: 285px;
 }
 }
 }
+
+.footer-contact{
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-bg-secundary;
+    padding: 10px;
+    position: relative;
+    &__logo-contact{
+    margin-left: 10px;
+    }
+    &__company-name-contact{
+    color:$color-text-ligth;
+    font-family: cursive;    
+    }
+    &__contact-item-contact{
+    list-style: none;
+    }
+    &__contact-link-contact{
+    color: $color-text-ligth;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    }
+    &__contact-icon-contact{
+    font-size: 1rem ;
+    &--facebook-contact{
+        color: $color-text-ligth ;
+    }
+    &--instagram-about-contact{
+    color:$color-text-ligth ;
+    }
+    &--linkedln-contact{
+    color: $color-text-ligth ;
+    }
+    &--copyright-contact{
+    color:$color-text-ligth ;
+    font-size: .75rem;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    
+    }
+    }
+}
+    @media screen and (min-width: 600px) {
+    .footer-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    &__logo-contact{
+    margin-left: 13px;
+    }
+    &__contact-icon-contact{
+    &--copyright-about{
+    font-size: 8px;
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
+    }
+    }
+    }
+    }

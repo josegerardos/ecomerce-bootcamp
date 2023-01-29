@@ -47,6 +47,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         position: relative;
+        overflow: hidden;
         &__logo{
         margin-left: 13px;
         }
