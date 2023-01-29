@@ -25,20 +25,19 @@
     &__contact-icon{
     font-size: 1rem ;
     &--facebook{
-        color: #058af0 ;
+        color: $color-text-ligth ;
     }
     &--instagram{
-    color: #df4b5a ;
+    color:$color-text-ligth ;
     }
     &--linkedln{
-    color: #058af0 ;
+    color: $color-text-ligth ;
     }
     &--copyright{
     color:$color-text-ligth ;
     font-size: .75rem;
     position: absolute;
-    right: 10px;
-    bottom: 15px;
+    bottom: 16px;
     }
     }
 }

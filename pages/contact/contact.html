@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     
 <!-- =================================HEADER====================================== -->
+
 <header class="header-contact">
-    <a href="">
-        <img src="/assets/image/logo-holy-surf.png" alt="" width="50px">
-    </a>
+    <nav class="navbar-contact">
+            <a href="/index.html" class="navbar-contact__nav-link-contact">
+            <img class="navbar-contact__logo-contact" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" >
+            </a>
+            <!-- =========================USER_NAVBAR====================================================== -->
+            <div class="user-navbar-contact">
+            <div class="user-navbar-contact__cart-icon-container-contact">
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="user-navbar-contact__user-avatar-container-contact">
+            <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar-contact__user-avatar-contact " alt="Imagen de usuario">
+            </div>
+            </div>
+            <!-- ========================btn desplegable========================================== -->
+            <input type="checkbox" class="navbar-contact__menu-btn-contact" id="menu-btn" >
+            <label for="menu-btn" class="navbar-contact__menu-label-contact">
+            <span class="navbar-contact__menu-icon-contact"></span>
+            </label>
+        <ul class="navbar-contact__nav-links-container-contact">
+            <li class="navbar-contact__nav-item-contact">
+            <a href="/index.html" class="navbar-contact__nav-link-contact" target="_blank">Inicio</a>
+            </li>
+            <li class="navbar-contact__nav-item-contact">
+            <a href="/pages/contact/contact.html" class="navbar-contact__nav-link-contact">Contacto</a>
+            </li>
+            <li class="navbar-contact__nav-item-contact">
+            <a href="/pages/about-us/about-us.html" class="navbar-contact__nav-link-contact">Nosotros</a>
+            </li>
+            <li class="navbar-contact__nav-item-contact">
+            <a href="/pages/register/register.html" class="navbar-contact__nav-link-contact">Registrarse</a>
+            </li>
+        </ul>
+    </nav>
+    
 </header>
 <!-- =====================================MAIN========================================= -->
     <main class="main-contact">
