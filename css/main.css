@@ -748,6 +748,11 @@ body {
   cursor: default;
   transition: all 400ms ease;
 }
+.form-contact__nav-input-contact {
+  color: white;
+  margin-top: 35px;
+  padding: 10px;
+}
 .form-contact__nav-input {
   color: white;
   padding: 2rem 0;
@@ -789,6 +794,12 @@ body {
 .form-contact__btn-contact:hover {
   background-color: #0070BB;
   color: white;
+}
+
+.iframe-container__nav-iframe {
+  color: white;
+  padding: 1px;
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 600px) {

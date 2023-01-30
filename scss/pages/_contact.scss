@@ -148,6 +148,11 @@ body{
     padding: 1rem 1rem 0;    
 }
 .form-contact{
+    &__nav-input-contact{
+        color: $color-text-ligth;
+        margin-top: 35px;
+        padding: 10px;
+    }
 &__nav-input{
 color: $color-text-ligth;
 padding: 2rem 0;
@@ -194,6 +199,14 @@ color: $color-text-ligth;
 }
 }    
 }
+.iframe-container{
+&__nav-iframe{
+    color: $color-text-ligth;
+    padding: 1px;
+    margin-top: 8px;
+}    
+}
+
 @media screen and (min-width:600px){
 .iframe-container{
 margin-bottom: 1rem;
