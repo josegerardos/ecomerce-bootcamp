@@ -124,7 +124,7 @@ body {
 .whatsapp-container {
   position: fixed;
   right: 25px;
-  bottom: 300px;
+  bottom: 100px;
 }
 .whatsapp-container__img {
   width: 70px;
@@ -1204,4 +1204,4 @@ body {
     bottom: 18px;
     right: 12px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
