@@ -52,34 +52,34 @@
             <div class="form-container-form">
             <section class="form">
             <main class="form__main-form">
-            <form>
+            <form id="registerForm">
             <p>
             <label class="form__label-form" for="fullname-input">Nombre completo</label><br>
-            <input class="form__input-form" type="text" name="fullname-input" id="fullname-input" required minlength="8" maxlength="45" autofocus>
+            <input class="form__input-form" type="text" name="fullname" id="fullname-input" required minlength="8" maxlength="45" autofocus>
             </p>
             <p>
             <label class="form__label-form" for="email-input">Email</label><br>
-            <input class="form__input-form" type="email" name="email-input" id="email-input" required placeholder="example@email.com" minlength="8" maxlength="45"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <input class="form__input-form" type="email" name="email" id="email-input" required placeholder="example@email.com" minlength="8" maxlength="45"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             </p>
             <p>
             <label class="form__label-form" for="password-input">Contraseña</label><br>
-            <input class="form__input-form" type="password" name="password-input" id="password-input" required>
+            <input class="form__input-form" type="password" name="password" id="password-input" required>
             </p>
             <p>
             <label class="form__label-form" for="repeat-password-input">Repetir Contraseña</label><br>
-            <input class="form__input-form" type="password" name="repeat-password-input" id="repeat-password-input" required >
+            <input class="form__input-form" type="password" name="password2" id="repeat-password-input" required >
             </p>
             <p>
             <label class="form__label-form" for="age-input">Edad</label><br>
-            <input class="form__input-form" type="number" name="age-input" id="age-input" required min="18" max="105" >
+            <input class="form__input-form" type="number" name="age" id="age-input" required min="18" max="105" >
             </p>
             <p>
             <label class="form__label-form" for="born-date-input">Fecha de nacimiento</label><br>
-            <input class="form__input-form" type="date" name="born-date-input" id="born-date-input" min="1985-12-10" max="2023-12-31">
+            <input class="form__input-form" type="date" name="date" id="born-date-input" min="1985-12-10" max="2023-12-31">
             </p>
             <p>
             <label class="form__label-form" for="country-of-birth">País de nacimiento</label><br>
-            <select class="form__input-form" name="country-of-birth" id="country-of-birth" required>
+            <select class="form__input-form" name="country" id="country-of-birth" required>
             <option></option>
             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
@@ -340,13 +340,13 @@
             </p>
             <p>
             <label class="form__label-form" for=""></label><br>
-            <input class="form__radio" type="checkbox" name="terms-and-conditions" value="terms-and-conditions">Acepto los términos y condiciones
+            <input class="form__radio" type="checkbox" name="terms" value="terms-and-conditions">Acepto los términos y condiciones
             </p>
             </main>
             
             <footer class="form__footer-form">
             <p>
-            <button class="form__btn-form-footer" type="submit">Enviar</button>
+            <button class="form__btn-form-footer" type="submit" id="registerSubmit">Enviar</button>
             </p>
             </footer>
             </form>
@@ -414,7 +414,10 @@
             </ul>
             </div>
             </footer>
-            
+            <!-- <div class="alert-dialog">
+                Se agrego usuario correctamente
+            </div> -->
+            <script src="/js/register.js"></script>
     </body>
     </html>
 

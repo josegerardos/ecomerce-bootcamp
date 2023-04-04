@@ -139,7 +139,11 @@ flex-direction: column;
 }
 
 .form{
-margin: 3px 15px;
+background: linear-gradient(rgba(5, 7, 12,0.75), rgba(5, 7, 12, 0.75));
+max-width: 50%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 background-color: transparent;
 border: 1px solid $color-bg-secundary;
 padding: 15px;
@@ -150,9 +154,9 @@ cursor: default;
 transition: all 400ms ease;
 &:hover{
 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-transform: translateY(-3%);
 }
 &__input-form{
+color: $color-text-ligth;
 background-color: transparent;
 outline: 1px solid $color-bg-secundary;
 width: 100%;
@@ -193,6 +197,7 @@ color: $color-text-ligth;
 text-align: center;
 border-bottom: 1px solid $color-bg-secundary;
 margin-bottom: 1rem;
+margin-top: 1rem;
 }
 }
 

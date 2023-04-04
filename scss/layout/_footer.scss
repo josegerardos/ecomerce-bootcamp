@@ -36,8 +36,7 @@
     &--copyright{
     color:$color-text-ligth ;
     font-size: .75rem;
-    position: absolute;
-    bottom: 16px;
+    padding: 5px 0;
     }
     }
 }
@@ -55,7 +54,7 @@
         &--copyright{
         font-size: 8px;
         position: absolute;
-        bottom: 18px;
+        bottom: 11px;
         right: 12px;
         }
         }

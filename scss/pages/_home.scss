@@ -65,6 +65,21 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) ;
 &__header{
 display: flex;
 }
+&__products-count{
+    margin-left: 50px;
+}
+}
+.product-search{
+&__btn{
+padding: 2px 10px;
+}
+&__label{
+margin-left: 94px;
+font-size: .95rem;
+}
+&__input{
+padding: 2px 10px;
+}
 }
 }
 
