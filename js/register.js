@@ -6,8 +6,8 @@
     const el = event.target.elements;
 
     if(el.password.value !== el.password2.value){
-        showAlert(' ⚠   El password no coincide' , 'warning')
-        return
+    showAlert(' ⚠   El password no coincide' , 'warning')
+    return
     }
 
     const users = JSON.parse(localStorage.getItem('users')) || [];
@@ -15,8 +15,6 @@
     const userExist = checkIfUserExist(users, el.email.value);
     if(userExist) {
         showAlert(' ❌  El mail ya se encuentra registrado', 'error')
-       
-        
         return;
     }
     // let userEmailExist = false;
@@ -59,41 +57,17 @@
 
 function checkIfUserExist(users, emailToSearch) {
 
-    const indexOfUser = users.findIndex(usuario => {
-        if(usuario.email === emailToSearch) {
-        return true
-        }
-        })
-        if(indexOfUser >= 0){
-        console.warn('El usuario ya existe')
-        return true;
-        }
+const indexOfUser = users.findIndex(usuario => {
+if(usuario.email === emailToSearch) {
+return true
 }
-function showAlert(text, type = 'succes') {      
-         //   VAMOS A HACER NUESTRO ALERT CUSTOM:
-        const alertDialog = document.createElement('div');
-        alertDialog.classList.add('alert-dialog');
-        alertDialog.innerText = text;
-        document.body.appendChild(alertDialog);
-
-        if(type === 'error') {
-            alertDialog.style.background = 'linear-gradient(rgba(159, 159, 161, 1), rgba(217, 15, 33, 1)';
-        }
-        if(type ==='warning') {
-            alertDialog.style.background = 'linear-gradient(rgba(159, 159, 161,1), rgba(217, 99, 15, 1))'
-        }
-
-        setTimeout(() => alertDialog.classList.add('show'), 10)
-
-        setTimeout(() =>{
-        alertDialog.remove('show');
-            setTimeout(() => {
-                alertDialog.remove()
-            }, 1000)
-            // window.location.href = '/pages/login/login.html'
-        }, 3000)
-
+})
+if(indexOfUser >= 0){
+showAlert (' ❌  El usuario ya existe', 'error')
+return true;
 }
+}
+
 
 
 
