@@ -169,6 +169,11 @@ body {
   transform: translateY(-3%);
 }
 
+@media screen and (min-width: 600px) {
+  .whatsapp-container {
+    bottom: 100px;
+  }
+}
 .alert-dialog {
   position: absolute;
   bottom: 15px;
@@ -183,6 +188,7 @@ body {
   opacity: 0;
   transition: visibility linear 0.5s, opacity 0.5s linear;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .alert-dialog.show {
   visibility: visible;
