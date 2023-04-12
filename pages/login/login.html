@@ -11,11 +11,97 @@
 
     <title>Ingresar</title>
 </head>
-<body>
-    <div class="container">
+<body class="body-login">
+    <!-- =================================================header=========================================== -->
+    <header class="header-login">
+        <nav class="navbar-login">
+        <a href="/index.html" class="navbar-login__nav-link-login">
+        <img class="navbar-login__logo-login" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" >
+        </a>
+        <!-- =========================USER_NAVBAR====================================================== -->
+        <div class="user-navbar-login">
+        <div 
+        class="user-navbar-login__cart-icon-container-login">
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="user-navbar-login__user-avatar-container-login">
+        <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png 100px-Default_pfp.svg.png " class="user-navbar-login__user-avatar-login " 
+        alt="Imagen de usuario">
+        </div>
+        </div>
+        <!-- ========================btn desplegable========================================== -->
+        <input type="checkbox" class="navbar-login__menu-btn-login" id="menu-btn" >
+        <label for="menu-btn" class="navbar-login__menu-label-login">
+        <span class="navbar-login__menu-icon-login"></span>
+        </label>
+        <ul class="navbar-login__nav-links-container-login">
+        <li class="navbar-login__nav-item-login">
+        <a href="/index.html" class="navbar-login__nav-link-login" target="_blank">Inicio</a>
+        </li>
+        <li class="navbar-form__nav-item-form">
+            <a href="/pages/contact/contact.html" class="navbar-form__nav-link-form">Contacto</a>
+            </li>
+        <li class="navbar-login__nav-item-login">
+        <a href="/pages/about-us/about-us.html" class="navbar-login__nav-link-login">Nosotros</a>
+        </li>
+        <li class="navbar-login__nav-item-login">
+        <a href="/pages/register/register.html" class="navbar-login__nav-link-login">Registrarse</a>
+        </li>
+        <li class="navbar__nav-item" id="sign-in">
+        <a href="/pages/login/login.html" class="navbar__nav-link">Login</a>
+        </li>
+        </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+<!-- ================================================================================================================ -->
+    
+<main class="main-login">
+    <div class="main-login__tittle-login">
+    <h2>LOGIN</h2>
+    </div>
+    <div class="login-container-login">
+    <section class="login">
+    <main class="login__main-login">
+    <form id="loginForm">
+    <p>
+    <label class="login__label-login" for="fullname-input">Nombre completo</label><br>
+    <input class="login__input-login" type="text" name="fullname" id="fullname-input" required minlength="8" maxlength="45" autofocus>
+    </p>
+    <p>
+    <label class="login__label-login" for="email-input">Email</label><br>
+    <input class="login__input-login" type="email" name="email" id="email-input" required placeholder="example@email.com" minlength="8" maxlength="45"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    </p>
+    <p>
+    <label class="login__label-login" for="password-input">Contraseña</label><br>
+    <input class="login__input-login" type="password" name="password" id="password-input" required>
+    </p>
+    <p>
+    <label class="login__label-login" for=""></label><br>
+    <input class="login__radio" type="checkbox" name="terms" value="terms-and-conditions" required>Acepto los términos y condiciones
+    </p>
+    </main>
+    
+    <footer class="login__footer-login">
+    <p>
+    <button class="login__btn-login-footer" type="submit" id="registerSubmit">Ingresar</button>
+    </p>
+    </footer>
+    </form>
+    </section>
+    </div>
+    </main>
+
+
+<!-- <div class="container">
         <h1>LOGIN</h1>
-        <form class="login-form" id="loginForm">
-            <div class="login-form">
+        <login class="login-login" id="loginlogin">
+            <div class="login-login">
                 <div class="input-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" value="ana@gmail.com" required>
@@ -24,10 +110,73 @@
                     <label for="password">Contraseña</label>
                     <input type="text" id="password" name="password" value="ana" required>
                 </div>
-                <button type="submit" class="btn">Ingresar</button>
+                <button type="submit" class="btn-login">Ingresar</button>
             </div>
-        </form>
+        </login>
+    </div> -->
+
+    <!-- ========================================================================================================== -->
+<!-- =====================================================footer======================================================== -->
+<footer class="footer-login">
+    <div class="footer-login__column-login">
+    <ul class="footer-login__login-container-login">
+    <li class="footer-login__login-item-login">
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-brands fa-facebook footer-login__login-icon-login footer__login-icon--facebook-login"></i>
+    Facebook.
+    </a>
+    </li>
+    <li class="footer-login__login-item-login">        
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-brands fa-instagram footer-login__login-icon-login footer-login__login-icon-login--instagram-login"></i>
+    Instagram.
+    </a>
+    </li>
+    <li class="footer-login__login-item-login">
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-brands fa-linkedin footer-login__login-icon-login footer-login__login-icon-login--linkedln-login"></i>
+    Linkedln.
+    </a>
+    </li>
+    </ul>
     </div>
+    <div class="footer-login__column-login">
+    <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer-login__logo" width="50px">
+    <h3 class="footer-login__company-name-login">
+    Holy Surf
+    </h3>
+    <p class="footer-login__copyright-login">
+    <i class="fa-solid fa-copyright footer-login__login-icon-login footer-login__login-icon-login--copyright-login">
+    2023 holy Surf
+    </i>
+    </p>
+    </div>
+    <div class="footer-login__column-login">
+    <ul class="footer-login__login-container-login">
+    <li class="footer-login__login-item-login">
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-solid fa-phone footer-login__login-icon-login"></i>
+    1170071163.
+    </a>
+    </li>
+    <li class="footer-login__login-item-login">       
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-solid fa-location-dot footer-login__login-icon-login"></i>
+    Saavedra 1874, San Martin. 
+    </a>
+    </li>
+    <li class="footer-login__login-item-login">
+    <a href="" class="footer-login__login-link-login">
+    <i class="fa-solid fa-envelope footer-login__login-icon-login"></i>
+    gerardo1801@gmail.com.
+    </a>
+    </li>
+    </ul>
+    </div>
+    </footer>
+
+
+
 <script src="/js/alert.js"></script>
 <script src="/js/header.js"></script>
 <script src="/js/login.js"></script>
