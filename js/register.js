@@ -46,7 +46,8 @@
         date:el.date.value,
         country:el.country.value,
         sex:el.sex.value,
-        termsAndConditions:el.terms.value
+        termsAndConditions:el.terms.value,
+        role:'USER_ROLE'
     }
     users.push(user)
     localStorage.setItem('users', JSON.stringify(users));

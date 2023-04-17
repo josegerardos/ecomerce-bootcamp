@@ -4,6 +4,9 @@ const paramsEntries = Object.fromEntries(paramsUrl)
 const indice = paramsEntries.id;
 const products = JSON.parse(localStorage.getItem('Products'));
 const product = products[indice]
-document.body.innerHTML = `<p>${JSON.stringify(product)}</p>
-
-                            <img src = "${product.image}">`
+document.body.innerHTML = `
+                            <h1>${product.name}</h1>
+                            <img src = "${product.image}">
+                            <p>${product.description}</p>
+                            <p>${product.price}</p>
+                            `

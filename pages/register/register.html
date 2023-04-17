@@ -67,11 +67,11 @@
             <p>
             <label class="form__label-form" for="password-input">Contraseña</label><br>
             <input class="form__input-form" type="password" name="password" id="password-input"
-            required>
+            required /*pattern="[A-Za-z0-9@#$%]{8,20}"*/ minlength="8" maxlength="20">
             </p>
             <p>
             <label class="form__label-form" for="repeat-password-input">Repetir Contraseña</label><br>
-            <input class="form__input-form" type="password" name="password2" id="repeat-password-input" required >
+            <input class="form__input-form" type="password" name="password2" id="repeat-password-input" required /*pattern="[A-Za-z0-9@#$%]{8,20}"*/ minlength="8" maxlength="20" >
             </p>
             <p>
             <label class="form__label-form" for="age-input">Edad</label><br>

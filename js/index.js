@@ -27,9 +27,9 @@
                 // </div>
                 // </div>
                 // </article>
-
+                
 const cardCcontainer = document.querySelector('#card-container');
-const productsLS = JSON.parse(localStorage.getItem('Products')) || [];
+const productsLS = JSON.parse(localStorage.getItem('Products')) || []; 
 console.log(productsLS)
 function renderizarProductos(products) {
 cardCcontainer.innerHTML = "";    
@@ -63,7 +63,6 @@ card.innerHTML = `  <div class="card__header">
                     </div>
                     </div>  `
 cardCcontainer.appendChild(card);
-
 });
 }
 renderizarProductos(productsLS);
