@@ -56,7 +56,7 @@ card.innerHTML = `  <div class="card__header">
                     </div>
                     <div class="card__footer">
                     <div class="card__btn-buy-container">
-                    <a class="card__btn-buy" href="">Comprar</a>
+                    <a class="card__btn-buy" href="" onclick="addToOrder(${index})">Comprar</a>
                     </div>
                     <div class="card__btn-container">
                     <a class="card__btn" href="/pages/product-detail/product-detail.html?id=${index}">Detalle</a>
