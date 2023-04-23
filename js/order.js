@@ -84,7 +84,7 @@ subtotal:000000,
 
 const tableBody = document.getElementById('table-body');
 
-function rederizarTabla(){
+function paintTable(){
     tableBody.innerHTML = ''
     Products.forEach((producto) => {
         let imagenSrc = producto.imagen ? producto.imagen : '/assets/product-img/img 10 no product.png'
@@ -101,8 +101,10 @@ function rederizarTabla(){
                         </tr>` 
 tableBody.innerHTML += tableRow
 });
+
 }
-rederizarTabla()
+paintTable();
+
 
 
 

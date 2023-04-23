@@ -65,12 +65,14 @@ Action:000000,
 }
 
 ];
+
+// let Products = JSON.parse (localStorage.getItem('Products')) || [];
 const productForm = document.getElementById('add-product');
 const submitBtn = document.getElementById('submit-btn'); 
 const tableBody = document.getElementById('table-body');
 let editIndex; 
 
-function renderizarTabla() {
+function renderTable() {
     tableBody.innerHTML = ""
     Products.forEach((producto, index) => {
 
@@ -91,7 +93,7 @@ function renderizarTabla() {
 tableBody.innerHTML += tableRow
 })
 }
-renderizarTabla();
+renderTable();
 
 
 function addProduct(evt){
@@ -107,9 +109,12 @@ function addProduct(evt){
     } else {
     Products.push(newProductData);    
     }
+
+    localStorage.setItem('Products', JSON.stringify(Products));
+
     editIndex = undefined;
     submitBtn.classList.remove('edit-btn');
-    submitBtn.innerText = 'Cargar producto'
+    submitBtn.innerText = 'Cargar producto';
 
     Products.push(newProductData);
     renderizarTabla();
@@ -119,7 +124,7 @@ function addProduct(evt){
 
 function deleteProduct(indice) {
 Products.splice(indice, 1);
-renderizarTabla();
+renderTable();
 }
 
 function editProduct(idx) {
@@ -143,5 +148,5 @@ function setFavoriteProduct(index) {
             prod.favorite = false;
         }
     })
-renderizarTabla();
+renderTable();
 }
