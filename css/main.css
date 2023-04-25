@@ -1705,6 +1705,14 @@ body {
 .form-product__input-box {
   margin-bottom: 1rem;
 }
+.form-product__input-prod {
+  margin: 10px 0;
+  padding: 3px;
+}
+.form-product__text {
+  margin: 10px 0;
+  padding: 3px;
+}
 .form-product__submit-btn-container {
   color: black;
 }
@@ -1729,8 +1737,139 @@ body {
 @media screen and (min-width: 1000px) {
   .container1 {
     flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
   }
   .table-container {
     overflow-x: auto;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.titlle-user {
+  text-align: left;
+  padding: 20px;
+}
+
+.containerUser {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.table-userContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-user {
+  background-color: white;
+  border-collapse: collapse;
+  border-color: #0070BB;
+}
+.table-user__thead {
+  background-color: #0070BB;
+  color: white;
+}
+.table-user__td {
+  background-color: #0070BB;
+  color: white;
+  font-size: 0.75rem;
+}
+.table-user__th {
+  border: 2px solid #0070BB;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+.table-user__th__tr {
+  padding: 0.5rem;
+}
+
+.user__fullname {
+  text-align: center;
+}
+.user__email {
+  width: 30%;
+  text-align: justify;
+  padding: 10px;
+}
+.user__role {
+  font-weight: bold;
+  text-align: center;
+}
+.user__actions {
+  vertical-align: center;
+  text-align: center;
+  font-size: 1.75rem;
+}
+.user__actions-btn {
+  background-color: red;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 2px;
+  color: white;
+}
+.user__actions-btn:hover {
+  background-color: rgb(199, 1, 1);
+}
+.user__actions-btn--edit {
+  background-color: #0070BB;
+}
+.user__actions-btn--edit:hover {
+  background-color: rgb(73, 162, 250);
+}
+
+.table-user tr td:not(:first-child) {
+  padding: 0.5rem;
+}
+
+.table-user tbody tr:nth-child(odd) {
+  background-color: rgb(161, 198, 212);
+}
+
+.form-user {
+  padding: 2rem;
+  border: 1px solid #0070BB;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-user__input-box {
+  margin-bottom: 1rem;
+}
+.form-user__input-user {
+  margin: 10px 0;
+  padding: 5px;
+}
+.form-user__submit-btn-container-user {
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+.form-user__submit-user {
+  padding: 8px;
+  color: #0070BB;
+  border: 1px solid #0070BB;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.form-user__submit-user:hover {
+  background-color: #0070BB;
+  color: white;
+}
+
+.edit-btn {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .containerUser {
+    flex-direction: row;
+    padding-top: 3rem;
   }
 }

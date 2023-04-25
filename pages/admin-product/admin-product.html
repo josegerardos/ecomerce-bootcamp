@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="/css/main.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +14,7 @@
 </head>
 <body>
 
-    <h1>ADMIN PRODUCT</h1>
+    <h1 class="titlle-product">ADMINISTRADOR DE PRODUCTOS</h1>
 <div class="container1">
     
 <form id="add-product" class="form-product" onsubmit="addProduct(event)">
@@ -28,7 +26,7 @@
     
     <div class="form-product__input-box">
     <label class="form-product__label-prod" for="description">Descripción</label><br>
-    <textarea name="description" id="description" rows="5" required >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore beatae nam et laudantium natus maiores numquam non earum odit? Incidunt ab sunt magni velit quo in, recusandae quasi eaque!</textarea>
+    <textarea class="form-product__text" name="description" id="description" rows="5" required >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore beatae nam et laudantium natus maiores numquam non earum odit? Incidunt ab sunt magni velit quo in, recusandae quasi eaque!</textarea>
     </div>
 
     <div class="form-product__input-box">
@@ -72,7 +70,7 @@
 
 
 <script src="/js/admin-product.js"></script>
-<!-- <script src="/js/isAdmin.js"></script> -->
+<script src="/js/alert.js"></script>
 </body>
 </html>
 

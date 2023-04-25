@@ -111,8 +111,15 @@ margin-right: auto;
 // width: 100vw;
 
 &__input-box{
-    margin-bottom: 1rem;
-
+margin-bottom: 1rem;
+}
+&__input-prod{
+margin: 10px 0;
+padding: 3px;
+}
+&__text{
+margin: 10px 0;
+padding: 3px;
 }
 &__submit-btn-container{
     color: $color-bg-primary;
@@ -139,6 +146,9 @@ margin-right: auto;
 @media screen and (min-width: 1000px) {
 .container1{
 flex-direction: row;
+justify-content: center;
+// align-items: center;
+padding-top: 3rem;
 }
 .table-container{
 overflow-x: auto;

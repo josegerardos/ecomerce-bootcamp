@@ -1,79 +1,83 @@
 
-let Products = [
-    {
-image: "/assets/product-img/img 1 png.png",
-name: 'All round',
-description:'Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.',
-price:80000,
-action:000000,
-    },
-{
-image: "/assets/product-img/img 2 png.png",
-name: 'Touring',
-description:'Tabla de surf soft top 7.2, las más usadas para realizar travesías o largos recorridos.',
-price:82000,
-action:000000,
-},
-{
-image: "/assets/product-img/img 3 png.png",
-name: 'Racing',
-description:'Tabla de surf 7.0 evo G-boards 8 pulgadas, presenta soporte y anclaje y por lo tanto permite maniobras rápidas.',
-price:79000,
-action:000000,
-},
-{
-image:"/assets/product-img/img 4 jpg.jpg",
-name: 'Yoga',
-description:' Tabla de surf soft shockn pro superwide 7, excelente para la yoga en la playa,son livianas y consta de buena amortiguación.',
-price:69000,
-action:000000,
-},
-{
-image:"/assets/product-img/img 5 png.webp",
-name: 'Sub/surf',
-description:'Tabla de surf soft blue pro wide 8 pulgadas, muy versátil gracias a su diseño es la más utilizada para travesías de olas con poca fuerza.',
-price:76000,
-action:000000,
-},
-{
-image:"/assets/product-img/img 6 png.png",
-name: 'Windsup',
-description:'Tabla de surf soft 8.0 art mar cristal, sirve para las travesías tipo paddle surf y por su rígidez para otras disciplinas. ',
-price:72000,
-action:000000,
-},
-{
-image: "/assets/product-img/img 7 png.png",
-name: 'Desmontables',
-description:'Tabla de surf g-boards 212cm bic sport tahe, o modulares tipo de material polietileno, para obtener velocidad y fluidez.',
-price:68000,
-action:000000,
-},
-{
-image:"/assets/product-img/img 8 png.png",
-name:'Evolution',
-description:'Tabla de surf expoxy xtorsion 5.8 x 21.5, adecuada para principiantes ya q ofrecen mas flotabilidad, estabilidad y mayor facilidad para girar.',
-price:70000,
-action:000000,
-},
-{
-image:"/assets/product-img/img 9 png.jpg",
-name: 'Longboard',
-description:'Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.',
-price:65000,
-Action:000000,
-}
+// let Products = [
+//     {
+// image: "/assets/product-img/img 1 png.png",
+// name: 'All round',
+// description:'Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.',
+// price:80000,
+// action:000000,
+//     },
+// {
+// image: "/assets/product-img/img 2 png.png",
+// name: 'Touring',
+// description:'Tabla de surf soft top 7.2, las más usadas para realizar travesías o largos recorridos.',
+// price:82000,
+// action:000000,
+// },
+// {
+// image: "/assets/product-img/img 3 png.png",
+// name: 'Racing',
+// description:'Tabla de surf 7.0 evo G-boards 8 pulgadas, presenta soporte y anclaje y por lo tanto permite maniobras rápidas.',
+// price:79000,
+// action:000000,
+// },
+// {
+// image:"/assets/product-img/img 4 jpg.jpg",
+// name: 'Yoga',
+// description:' Tabla de surf soft shockn pro superwide 7, excelente para la yoga en la playa,son livianas y consta de buena amortiguación.',
+// price:69000,
+// action:000000,
+// },
+// {
+// image:"/assets/product-img/img 5 png.webp",
+// name: 'Sub/surf',
+// description:'Tabla de surf soft blue pro wide 8 pulgadas, muy versátil gracias a su diseño es la más utilizada para travesías de olas con poca fuerza.',
+// price:76000,
+// action:000000,
+// },
+// {
+// image:"/assets/product-img/img 6 png.png",
+// name: 'Windsup',
+// description:'Tabla de surf soft 8.0 art mar cristal, sirve para las travesías tipo paddle surf y por su rígidez para otras disciplinas. ',
+// price:72000,
+// action:000000,
+// },
+// {
+// image: "/assets/product-img/img 7 png.png",
+// name: 'Desmontables',
+// description:'Tabla de surf g-boards 212cm bic sport tahe, o modulares tipo de material polietileno, para obtener velocidad y fluidez.',
+// price:68000,
+// action:000000,
+// },
+// {
+// image:"/assets/product-img/img 8 png.png",
+// name:'Evolution',
+// description:'Tabla de surf expoxy xtorsion 5.8 x 21.5, adecuada para principiantes ya q ofrecen mas flotabilidad, estabilidad y mayor facilidad para girar.',
+// price:70000,
+// action:000000,
+// },
+// {
+// image:"/assets/product-img/img 9 png.jpg",
+// name: 'Longboard',
+// description:'Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.',
+// price:65000,
+// Action:000000,
+// }
 
-];
+// ];
 
-// let Products = JSON.parse (localStorage.getItem('Products')) || [];
+let Products = JSON.parse (localStorage.getItem('Products')) || [];
 const productForm = document.getElementById('add-product');
 const submitBtn = document.getElementById('submit-btn'); 
 const tableBody = document.getElementById('table-body');
 let editIndex; 
 
 function renderTable() {
-    tableBody.innerHTML = ""
+    tableBody.innerHTML = "";
+    if(Products.length === 0) {
+        tableBody.innerHTML = `<tr class = "disabled"><td colspan="6"></td>NO SE ENCONTRARON PRODUCTOS</td></tr>`
+        return
+    }
     Products.forEach((producto, index) => {
 
     let imageSrc = producto.image ? producto.image : '/assets/product-img/img 10 no product.png'
@@ -106,8 +110,10 @@ function addProduct(evt){
 
     if(editIndex >= 0) {
     Products[editIndex] = newProductData
+    showAlert(' ✔   El producto se edito correctamente', 'succes')
     } else {
-    Products.push(newProductData);    
+    Products.push(newProductData); 
+    showAlert(' ✔   El producto se agrego correctamente ', 'succes')
     }
 
     localStorage.setItem('Products', JSON.stringify(Products));
@@ -116,14 +122,15 @@ function addProduct(evt){
     submitBtn.classList.remove('edit-btn');
     submitBtn.innerText = 'Cargar producto';
 
-    Products.push(newProductData);
-    renderizarTabla();
+    renderTable();
     evt.target.reset();
     elements.name.focus();
 }
 
 function deleteProduct(indice) {
 Products.splice(indice, 1);
+localStorage.setItem('Products', JSON.stringify(Products));
+showAlert(' ✔   Elemento borrado correctamente', 'succes');
 renderTable();
 }
 
@@ -147,6 +154,8 @@ function setFavoriteProduct(index) {
         } else {
             prod.favorite = false;
         }
+        localStorage.setItem('Products', JSON.stringify(Products))
+        
     })
 renderTable();
 }

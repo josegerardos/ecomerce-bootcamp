@@ -5,17 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-
-
-    <title>Admin-user</title>
+<title>ADMIN USER</title>
 </head>
-<body>
-    <h1>Admin-user</h1>
+
+<body class="body-user">
+    <h1 class="titlle-user">ADMINISTRADOR DE USUARIOS</h1>
+    <div class="containerUser">
+    <form id="add-user" class="form-user" onsubmit="addUser(event)">
+
+        <div class="form-user__imput-box">
+        <label class="form-user__label-user" for="fullname-user">Nombre completo</label><br>
+        <input class="form-user__input-user" type="text" name="fullname" id="fullname-user" required minlength="8" maxlength="45" autofocus>
+        </div>
+        <div class="form-user__imput-box">
+        <label class="form-user__label-user" for="email-user">Email</label><br>
+        <input class="form-user__input-user" type="email" name="email" id="email-user" required placeholder="example@email.com" minlength="8" maxlength="45"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        </div>
+        <div class="form-user__imput-box">
+        <label class="form-user__label-user" for="role-user">Rol</label><br>
+        <input class="form-user__input-user" type="text" name="role" id="role-user" required minlength="8" maxlength="45">
+        </div>
+
+        <div class="form-user__submit-btn-container-user">
+        <button type="submit" class="form-user__submit-user " id="submit-btnUser">Cargar usuario</button>
+        </div>
+    </form>
+
+    <div class="table-userContainer">
+    <table class="table-user" border="2px">
+    <thead class="table-user__thead">
+            <tr class ="table-user__tr">
+            <th class="table-user__th">NOMBRE COMPLETO</th>
+            <th class="table-user__th">EMAIL</th>
+            <th class="table-user__th">ROL</th>
+            <th class="table-user__th">ACCIONES</th>
+            </tr>
+    </thead>
+    <tbody id="table-bodyUser" class="table-user__tbody">
+            <tr class="table-user__tr">
+            <td class="table-user__td">jose</td>
+            <td class="table-user__td">jose@gmail.com</td>
+            <td class="table-user__td">admin</td>
+            <td class="table-user__td">🖍🗑</td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <script src="/js/admin-user.js"></script>
+    <script src="/js/alert.js"></script>
 </body>
 </html>

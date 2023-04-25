@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titlle-user{
+    text-align:left;
+    padding: 20px;
+}
+.containerUser{
+display: flex;
+flex-direction: column;
+gap: 1rem ;
+
+}
+.table-userContainer{
+margin-left: auto;
+margin-right: auto;
+}
+.table-user{
+background-color: $color-text-ligth ;
+border-collapse: collapse;
+border-color: $color-bg-secundary;
+&__thead{
+    background-color: $color-bg-secundary;
+    color: $color-text-ligth;
+}
+&__td{
+    background-color: $color-bg-secundary;
+    color: $color-text-ligth;
+    font-size: .75rem;
+}
+&__th{
+    border: 2px solid $color-bg-secundary;
+    font-size: .75rem;
+    padding: .5rem;
+&__tr{
+    padding: .5rem;
+}
+}
+}
+.user{
+
+&__fullname{
+    text-align: center;
+}
+&__email{
+    width: 30%;
+    text-align: justify;
+    padding: 10px;
+}
+&__role{
+    font-weight: bold;
+    text-align: center;
+}
+&__actions{
+vertical-align: center;
+text-align: center;
+font-size: 1.75rem;
+}
+&__actions-btn{
+background-color: $color-bg-red;
+border: none;
+padding: 0.25rem;
+border-radius: 2px;
+color: $color-text-ligth;
+}
+&__actions-btn:hover{
+    background-color: $color-bg1-red ;
+}
+&__actions-btn--edit{
+    background-color: $color-bg-secundary;
+}
+&__actions-btn--edit:hover{
+    background-color: $color-bg1-secundary;
+}
+}
+.table-user tr td:not(:first-child) {
+padding: .5rem;
+}
+.table-user tbody tr:nth-child(odd) {
+background-color: rgb(161, 198, 212) ;
+}
+
+.form-user{
+padding: 2rem;
+border: 1px solid $color-bg-secundary;
+margin-left: auto;
+margin-right: auto;
+&__input-box{
+margin-bottom: 1rem;
+}
+&__input-user{
+    margin:10px 0;
+    padding: 5px;
+}
+&__submit-btn-container-user{
+    color: $color-bg-primary;
+    padding: 5px;
+    text-align: center;
+}
+&__submit-user{
+padding: 8px;
+color:$color-bg-secundary;
+border: 1px solid $color-bg-secundary;
+border-radius: 4px;
+transition: all 400ms ease;
+}
+&__submit-user:hover{
+    background-color: $color-bg-secundary;
+    color: $color-text-ligth;
+}
+}
+.edit-btn {
+    background-color: $color-bg-primary;
+    border-color: $color-text-ligth;
+    color: $color-text-ligth;
+}
+
+@media screen and (min-width: 1000px) {
+.containerUser{
+flex-direction: row;
+// justify-content: center;
+// align-items: center;
+padding-top: 3rem;
+
+}
+}
