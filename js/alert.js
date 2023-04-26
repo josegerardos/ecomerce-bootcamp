@@ -1,5 +1,5 @@
 function showAlert(text, type = 'succes') {      
-    //   VAMOS A HACER NUESTRO ALERT CUSTOM:
+    //   ALERT CUSTOM:
 const alertDialog = document.createElement('div');
 alertDialog.classList.add('alert-dialog');
 alertDialog.innerText = text;
@@ -19,7 +19,7 @@ alertDialog.remove('show');
 setTimeout(() => {
 alertDialog.remove()
 }, 1000)
-       // window.location.href = '/pages/login/login.html'
+
 }, 3000)
 
 }

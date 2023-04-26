@@ -17,25 +17,7 @@
         showAlert(' ❌  El mail ya se encuentra registrado', 'error')
         return;
     }
-    // let userEmailExist = false;
 
-    // solucion 1 no adecuada porque recorre todo el array 
-    // users.forEach(usr => {
-    //     if(usr.email === el.email.value){
-    //         console.warn('El usuario ya existe')
-    //         userEmailExist = true;
-    //     }
-    // })
-// !================================================================
-//     const userExist = users.find(user => {
-//         if(user.email === el.email.value){
-//             return true
-//         }
-//     })
-//     if(userExist) {
-//         console.warn('El usuario ya existe')
-//         return
-// }
 
     const user = {
         fullName:el.fullname.value,
@@ -51,10 +33,11 @@
     }
     users.push(user)
     localStorage.setItem('users', JSON.stringify(users));
-    // registerForm.reset()
-    showAlert('✔   El usuario se registro correctamente', 'succes')
-
-})
+    setTimeout(() => {
+        window.location.href = '/pages/login/login.html';
+    }, 3000)
+    showAlert('✔   El usuario se registro correctamente', 'succes');
+    })
 
 function checkIfUserExist(users, emailToSearch) {
 
