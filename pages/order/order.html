@@ -8,42 +8,160 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/main.css">
-
-
-
-
+    
     <title>ORDER</title>
 </head>
-<body>
-<h1>ORDER</h1>
 
-<table class="table-product">
-    <thead>
-        <tr>
-            <th>IMAGEN</th>
-            <th>PRODUCTO</th>
-            <th>DESCRIPCIÓN</th>
-            <th>CANTIDAD</th>
-            <th>PRECIO</th>
-            <th>SUBTOTAL</th>
+<body class="body-order">
+<h1 class="titlle-order">ORDER</h1>
+<!-- ======================================================================================= -->
+
+<header class="header">
+    <nav class="navbar">
+            <a href="/index.html" class="navbar__nav-link" target="_blank">
+            <img class="navbar__logo" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" width= 50px>
+            </a>
+            <!-- =========================USER_NAVBAR====================================================== -->
+            <div class="user-navbar">
+            <div class="user-navbar__cart-icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="/pages/order/order.html">
+            <div class="user-navbar__cart-badge" id="cart-count" >0</div>
+            </a>
+            </div>
+            
+            <div class="user-navbar__user-avatar-container">
+            <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar__user-avatar " alt="Imagen de usuario">
+            </div>
+            </div>
+            <!-- ========================btn desplegable========================================== -->
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn" >
+            <label for="menu-btn" class="navbar__menu-label">
+            <span class="navbar__menu-icon"></span>
+            </label>
+        <ul class="navbar__nav-links-container" id="navbar-list">
+            <li class="navbar__nav-item">
+            <a href="/index.html" class="navbar__nav-link" target="_blank">Inicio</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/order/order.html" class="navbar__nav-link">contacto</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+            </li>
+            <li class="navbar__nav-item">
+            <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+            </li>
+            <li class="navbar__nav-item" id="sign-in">
+            <a href="/pages/login/login.html" class="navbar__nav-link">Login</a>
+            </li>
+        </ul>
+    </nav>
+    
+</header>
+
+<!-- =================================================================================================== -->
+<main class="main-order">
+    
+
+<div class="container2">
+<table class="table-order" border="2px" id="table-container" >
+    <thead class="table-order__thead">
+        <tr class ="table-order__tr">
+        <th class="table-order__th">IMAGEN</th>
+        <th class="table-order__th">PRODUCTO</th>
+        <th class="table-order__th">DESCRIPCIÓN</th>
+        <th class="table-order__th">CANTIDAD</th>
+        <th class="table-order__th">PRECIO</th>
+        <th class="table-order__th">SUBTOTAL</th>
+        <th class="table-order__th">action</th>
         </tr>
     </thead>
-    <tbody id="table-body">
-        <tr>
-            <td>
-                <img src="/assets/product-img/img 1 png.png" alt="" width="120">
-            </td>
-            <td>tabla</td>
-            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iusto.</td>
-            <td>4</td>
-            <td>230000</td>
-            <td>180000</td>
-        </tr>
 
-    </tbody>
+    <tbody  class="table-order__tbody" id="table-body"></tbody>
 </table>
+</div>
+
+<div class="button">
+    <button class="button__btn-3" id="total-button">Calcular total</button>
+    <div class=" button__bt1" id="total-display"></div>
+</div>
+<a class="btn-order" href="/">
+    <button class="btn-order__btn-order-buy">
+        Finalizar compra
+    </button>
+</a>
+
+</main>
+     <!-- ===================================================footer=====================================    -->
+     <footer class="footer-order">
+        <div class="footer-order__column-order">
+        <ul class="footer-order__contact-container-order">
+        <li class="footer-order__contact-item-order">
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-brands fa-facebook footer-order__order-icon-order footer__order-icon--facebook-order"></i>
+        Facebook.
+        </a>
+        </li>
+        <li class="footer-order__contact-item-order">        
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-brands fa-instagram footer-order__order-icon-order footer__order-icon--instagram-order"></i>
+        Instagram.
+        </a>
+        </li>
+        <li class="footer-order__contact-item-order">
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-brands fa-linkedin footer-order__contact-icon-order footer-order__contact-icon-order--linkedln-order"></i>
+        Linkedln.
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="footer-order__column-order">
+        <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer-order__logo" width="50px">
+        <h3 class="footer-order__company-name-order">
+        Holy Surf
+        </h3>
+        <p class="footer-order__copyright-order">
+        <i class="fa-solid fa-copyright footer-order__contact-icon-order footer-order__contact-icon-order--copyright-order">
+        2023 holy Surf
+        </i>
+        </p>
+        </div>
+        <div class="footer-order__column-order">
+        <ul class="footer-order__contact-container-order">
+        <li class="footer-order__contact-item-order">
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-solid fa-phone footer-order__contact-icon-order"></i>
+        1170071163.
+        </a>
+        </li>
+        <li class="footer-order__contact-item-order">       
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-solid fa-location-dot footer-order__contact-icon-order"></i>
+        Saavedra 1874, San Martin. 
+        </a>
+        </li>
+        <li class="footer-order__contact-item-order">
+        <a href="" class="footer-order__contact-link-order">
+        <i class="fa-solid fa-envelope footer-order__contact-icon-order"></i>
+        gerardo1801@gmail.com.
+        </a>
+        </li>
+        </ul>
+        </div>
+        </footer>
 
 
-<script src="/js/order.js"></script>
+
+<script src="/js/alert.js"></script>
+<script src="/js/order.js"></script>     
+<script src="/js/badge.js"></script>
+
 </body>
 </html>
+
+
+
+
+

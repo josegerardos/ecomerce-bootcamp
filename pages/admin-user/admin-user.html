@@ -4,24 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-
     <link rel="stylesheet" href="/css/main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<title>ADMIN USER</title>
+    <title>ADMIN USER</title>
 </head>
 
-<body class="body-user">
+<body>
+
+    <header class="header-user">
+        <nav class="navbar-user">
+                <a href="/index.html" class="navbar-user__nav-link-user">
+                <img class="navbar-user__logo-user" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" >
+                </a>
+                <div class="user-navbar-user">
+                <div class="user-navbar-user__cart-icon-container-user">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="/pages/order/order.html">
+                <div class="user-navbar-user__cart-badge-user" id="cart-count" >0</div>
+                </a>
+                </div>
+                <div class="user-navbar-user__user-avatar-container-user">
+                <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar-user__user-avatar-user " alt="Imagen de usuario">
+                </div>
+                </div>
+                <!-- ========================btn desplegable========================================== -->
+                <input type="checkbox" class="navbar-user__menu-btn-user" id="menu-btn-1" >
+                <label for="menu-btn-1" class="navbar-user__menu-label-user">
+                <span class="navbar-user__menu-icon-user"></span>
+                </label>
+            <ul class="navbar-user__nav-links-container-user">
+                <li class="navbar-user__nav-item-user">
+                <a href="/index.html" class="navbar-user__nav-link-user" target="_blank">Inicio</a>
+                </li>
+                <li class="navbar-user__nav-item-user">
+                <a href="/pages/contact/contact.html" class="navbar-user__nav-link-user">Contacto</a>
+                </li>
+                <li class="navbar-user__nav-item-user">
+                <a href="/pages/user-us/user-us.html" class="navbar-user__nav-link-user">Nosotros</a>
+                </li>
+                <li class="navbar-user__nav-item-user">
+                <a href="/pages/register/register.html" class="navbar-user__nav-link-user">Registrarse</a>
+                </li>
+                <li class="navbar__nav-item" id="sign-in">
+                <a href="/pages/login/login.html" class="navbar__nav-link">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<!-- ======================================================================================================= -->
+<main class="main-user">
     <h1 class="titlle-user">ADMINISTRADOR DE USUARIOS</h1>
     <div class="containerUser">
     <form id="add-user" class="form-user" onsubmit="addUser(event)">
 
         <div class="form-user__imput-box">
         <label class="form-user__label-user" for="fullname-user">Nombre completo</label><br>
-        <input class="form-user__input-user" type="text" name="fullname" id="fullname-user" required minlength="8" maxlength="45" autofocus>
+        <input class="form-user__input-user" type="text" name="fullname" id="fullname-user" size="40" required minlength="8" maxlength="45" autofocus>
         </div>
         <div class="form-user__imput-box">
         <label class="form-user__label-user" for="email-user">Email</label><br>
@@ -58,7 +102,74 @@
     </table>
     </div>
     </div>
-    <script src="/js/admin-user.js"></script>
+    </main>
+    <!-- =========================================================================================== -->
+    <footer class="footer-user">
+        <div class="footer-user__column-user">
+        <ul class="footer-user__contact-container-user">
+        <li class="footer-user__contact-item-user">
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-brands fa-facebook footer-user__contact-icon-user footer__contact-icon--facebook"></i>
+        Facebook.
+        </a>
+        </li>
+        <li class="footer-user__contact-item-user">        
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-brands fa-instagram footer-user__contact-icon-user footer-user__contact-icon-user--instagram-user"></i>
+        Instagram.
+        </a>
+        </li>
+        <li class="footer-user__contact-item-user">
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-brands fa-linkedin footer-user__contact-icon-user footer-user__contact-icon-user--linkedln-user"></i>
+        Linkedln.
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="footer-user__column-user">
+        <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer-user__logo" width="50px">
+        <h3 class="footer-user__company-name-user">
+        Holy Surf
+        </h3>
+        <p class="footer-user__copyright-user">
+        <i class="fa-solid fa-copyright footer-user__contact-icon-user footer-user__contact-icon-user--copyright-user">
+        2023 holy Surf
+        </i>
+        </p>
+        </div>
+        <div class="footer-user__column-user">
+        <ul class="footer-user__contact-container-user">
+        <li class="footer-user__contact-item-user">
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-solid fa-phone footer-user__contact-icon-user"></i>
+        1170071163.
+        </a>
+        </li>
+        <li class="footer-user__contact-item-user">       
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-solid fa-location-dot footer-user__contact-icon-user"></i>
+        Saavedra 1874, San Martin. 
+        </a>
+        </li>
+        <li class="footer-user__contact-item-user">
+        <a href="" class="footer-user__contact-link-user">
+        <i class="fa-solid fa-envelope footer-user__contact-icon-user"></i>
+        gerardo1801@gmail.com.
+        </a>
+        </li>
+        </ul>
+        </div>
+        </footer>
+
+
+    
+    <script src="/js/isAdmin.js"></script>
     <script src="/js/alert.js"></script>
+    <script src="/js/admin-user.js"></script>
+    <script src="/js/order.js"></script>
+    <script src="/js/badge.js"></script>
+    
+    
 </body>
 </html>

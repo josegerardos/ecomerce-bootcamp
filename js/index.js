@@ -1,5 +1,5 @@
 
-// let cards = [
+// let Products = [
 //     {
 // image: "/assets/product-img/img 1 png.png",
 // name: 'All round',
@@ -115,11 +115,15 @@
 
 // ];
 
+// localStorage.setItem('Products', JSON.stringify(Products));
+const user = JSON.parse(localStorage.getItem('user'))
 const cardCcontainer = document.querySelector('#card-container');
-const productsLS = JSON.parse(localStorage.getItem('cards')) || []; 
-// console.log(productsLS)
+const productsLS = JSON.parse(localStorage.getItem('Products')) || [];
+const searchBtn = document.querySelector('.product-search__btn');
+searchBtn.addEventListener('click', filterProducts);
+
 function renderProducts(products) {
-cardCcontainer.innerHTML = "";    
+cardCcontainer.innerHTML = '';    
 products.forEach((product, index) => {
 
 const card = document.createElement('article');
@@ -143,10 +147,10 @@ card.innerHTML = `  <div class="card__header">
                     </div>
                     <div class="card__footer">
                     <div class="card__btn-buy-container">
-                    <a class="card__btn-buy" href="" onclick="addToOrder(${index})">Comprar</a>
+                    <a class="card__btn-buy" id="cart-count" href="/pages/order/order.html" onclick="addToOrder(${index})" ${user ? '': 'disabled'}>Comprar</a>
                     </div>
                     <div class="card__btn-container">
-                    <a class="card__btn" href="/pages/product-detail/product-detail.html?id=${index}">Detalle</a>
+                    <a class='card__btn' href="/pages/product-detail/product-detail.html?id=${index}" >Detalle</a>
                     </div>
                     </div>  `
 cardCcontainer.appendChild(card);
@@ -154,3 +158,28 @@ cardCcontainer.appendChild(card);
 
 }
 renderProducts(productsLS);
+
+ 
+function filterProducts() {
+  const searchInput = document.querySelector('#buscar');
+  const searchText = searchInput.value.toLowerCase().trim();
+
+  const filteredProducts = productsLS.filter((product) => {
+    const productName = product.name.toLowerCase();
+    return productName.includes(searchText);
+  });
+
+  renderProducts(filteredProducts);
+
+  const buyButtons = document.querySelectorAll('.product__btn');
+  buyButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      addToOrder(index); 
+      window.location.href = 'order.html';
+    });
+  });
+
+  const productsCount = document.querySelector('#cantidad-de-productos');
+  productsCount.textContent = filteredProducts.length;
+}
+

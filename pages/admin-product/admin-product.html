@@ -9,11 +9,52 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <title>ADMIN PRODUCT</title>
 </head>
 <body>
-
+<!-- ========================================================header================================== -->
+    <header class="header-prod">
+        <nav class="navbar-prod">
+                <a href="/index.html" class="navbar-prod__nav-link-prod">
+                <img class="navbar-prod__logo-prod" src="/assets/image/logo-holy-surf.png" alt="Logo del ecommerce" >
+                </a>
+                <div class="user-navbar-prod">
+                <div class="user-navbar-prod__cart-icon-container-prod">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="/pages/order/order.html">
+                <div class="user-navbar-prod__cart-badge-prod" id="cart-count" >0</div>
+                </a>
+                </div>
+                <div class="user-navbar-prod__user-avatar-container-prod">
+                <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar-prod__user-avatar-prod " alt="Imagen de usuario">
+                </div>
+                </div>
+                <!-- ========================btn desplegable========================================== -->
+                <input type="checkbox" class="navbar-prod__menu-btn-prod" id="menu-btn-1" >
+                <label for="menu-btn-1" class="navbar-prod__menu-label-prod">
+                <span class="navbar-prod__menu-icon-prod"></span>
+                </label>
+            <ul class="navbar-prod__nav-links-container-prod">
+                <li class="navbar-prod__nav-item-prod">
+                <a href="/index.html" class="navbar-prod__nav-link-prod" target="_blank">Inicio</a>
+                </li>
+                <li class="navbar-prod__nav-item-prod">
+                <a href="/pages/contact/contact.html" class="navbar-prod__nav-link-prod">Contacto</a>
+                </li>
+                <li class="navbar-prod__nav-item-prod">
+                <a href="/pages/prod-us/prod-us.html" class="navbar-prod__nav-link-prod">Nosotros</a>
+                </li>
+                <li class="navbar-prod__nav-item-prod">
+                <a href="/pages/register/register.html" class="navbar-prod__nav-link-prod">Registrarse</a>
+                </li>
+                <li class="navbar__nav-item" id="sign-in">
+                <a href="/pages/login/login.html" class="navbar__nav-link">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- ===================================================main==================================== -->
+<main class="main">
     <h1 class="titlle-product">ADMINISTRADOR DE PRODUCTOS</h1>
 <div class="container1">
     
@@ -67,10 +108,69 @@
 </table>
 </div>
 </div>
-
-
-<script src="/js/admin-product.js"></script>
+</main>
+<!-- ==================================================================================================== -->
+<footer class="footer-prod">
+    <div class="footer-prod__column-prod">
+    <ul class="footer-prod__contact-container-prod">
+    <li class="footer-prod__contact-item-prod">
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-brands fa-facebook footer-prod__contact-icon-prod footer__contact-icon--facebook"></i>
+    Facebook.
+    </a>
+    </li>
+    <li class="footer-prod__contact-item-prod">        
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-brands fa-instagram footer-prod__contact-icon-prod footer-prod__contact-icon-prod--instagram-prod"></i>
+    Instagram.
+    </a>
+    </li>
+    <li class="footer-prod__contact-item-prod">
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-brands fa-linkedin footer-prod__contact-icon-prod footer-prod__contact-icon-prod--linkedln-prod"></i>
+    Linkedln.
+    </a>
+    </li>
+    </ul>
+    </div>
+    <div class="footer-prod__column-prod">
+    <img src="/assets/image/logo-holy-surf.png" alt="Company logo" class="footer-prod__logo" width="50px">
+    <h3 class="footer-prod__company-name-prod">
+    Holy Surf
+    </h3>
+    <p class="footer-prod__copyright-prod">
+    <i class="fa-solid fa-copyright footer-prod__contact-icon-prod footer-prod__contact-icon-prod--copyright-prod">
+    2023 holy Surf
+    </i>
+    </p>
+    </div>
+    <div class="footer-prod__column-prod">
+    <ul class="footer-prod__contact-container-prod">
+    <li class="footer-prod__contact-item-prod">
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-solid fa-phone footer-prod__contact-icon-prod"></i>
+    1170071163.
+    </a>
+    </li>
+    <li class="footer-prod__contact-item-prod">       
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-solid fa-location-dot footer-prod__contact-icon-prod"></i>
+    Saavedra 1874, San Martin. 
+    </a>
+    </li>
+    <li class="footer-prod__contact-item-prod">
+    <a href="" class="footer-prod__contact-link-prod">
+    <i class="fa-solid fa-envelope footer-prod__contact-icon-prod"></i>
+    gerardo1801@gmail.com.
+    </a>
+    </li>
+    </ul>
+    </div>
+    </footer>
 <script src="/js/alert.js"></script>
+<script src="/js/admin-product.js"></script>
+
+
 </body>
 </html>
 

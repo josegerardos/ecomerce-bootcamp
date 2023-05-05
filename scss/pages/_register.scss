@@ -118,6 +118,26 @@ flex-direction: column;
     &__user-avatar-form{
     width: 35px;
     }
+
+    &__cart-icon-container-form{
+        margin-right: .5rem ;
+        position: relative;
+        }
+    &__cart-badge-form{
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $color-bg-red;
+        color: $color-text-ligth;
+        font-size: 12px;
+        text-align: center;
+        }
+
+
+
 }
 
 @media screen and (min-width: 600px){

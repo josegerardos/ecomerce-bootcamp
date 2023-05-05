@@ -23,9 +23,11 @@
             <div class="user-navbar">
             <div class="user-navbar__cart-icon-container">
             <i class="fa-solid fa-cart-shopping"></i>
-            <a href="/pages/order/order.html"></a>
-            <div class="user-navbar__cart-badge" id="cart-count">0</div>
+            <a href="/pages/order/order.html">
+            <div class="user-navbar__cart-badge" id="cart-count" >0</div>
+            </a>
             </div>
+            
             <div class="user-navbar__user-avatar-container">
             <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png " class="user-navbar__user-avatar " alt="Imagen de usuario">
             </div>
@@ -55,7 +57,7 @@
     </nav>
     
 </header>
-    <!-- TODO:Implementar carousel en "2do modulo" -->
+    
 
 <!-- =========================================main============================================= -->
 
@@ -71,11 +73,11 @@
         <div class="section-cards__products-search-container">
         <div class="product-search">
         <label for="buscar" class="product-search__label"><i class="fa-solid fa-magnifying-glass"></i></label>
-        <input type="text" name="buscar" class="product-search__input" size="40px" id="buscar" >
+        <input type="text" name="buscar" class="product-search__input" size="40px" id="buscar" autofocus maxlength="25" minlength="3" >
         <button class="product-search__btn">Buscar</button>
         </div>
         <div class="section-cards__products-count">
-        Se encontraron X productos
+        Se encontraron <span id="cantidad-de-productos"></span>productos
         </div>
         </div>
         </header>
@@ -84,264 +86,16 @@
         </h1>
         <!-- =====================================card===================================================== -->
         <div class="cards-container" id="card-container">
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 1 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                All round
-                </div>
-                <p class="card__description">
-                Tabla de surf-mini funboard 6.0 equilibrio perfecto entre velocidad y estabilidad.
-                </p>
-                
-                <div class="card__price">
-                $ 80000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 2 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Touring
-                </div>
-                <p class="card__description">
-                Tabla de surf soft top 7'2, las más usadas para realizar travesías o largos recorridos.
-                </p>
-                <div class="card__price">
-                $ 82000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 3 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Racing
-                </div>
-                <p class="card__description">
-                Tabla de surf 7.0 evo G-boards 8', presenta soporte y anclaje y por lo tanto permite maniobras rápidas.
-                </p>
-                <div class="card__price">
-                $ 79000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>                
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 4 jpg.jpg" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Yoga
-                </div>
-                <p class="card__description">
-                Tabla de surf soft shockn pro superwide 7, excelente para la yoga en la playa,son livianas y consta de buena amortiguación. 
-                </p>
-                <div class="card__price">
-                $ 69000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 5 png.webp" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Sub/surf
-                </div>
-                <p class="card__description">
-                Tabla de surf soft blue pro wide 8', muy versátil gracias a su diseño es la más utilizada para travesías de olas con poca fuerza.
-                </p>
-                <div class="card__price">
-                $ 76000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 6 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Windsup
-                </div>
-                <p class="card__description">
-                Tabla de surf soft 8'0 art mar cristal, sirve para las travesías tipo paddle surf y por su rígidez para otras disciplinas. 
-                </p>
-                <div class="card__price">
-                $ 72000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 7 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Desmontables
-                </div>
-                <p class="card__description">
-                Tabla de surf g-boards 212cm bic sport tahe, o modulares tipo de material polietileno, para obtener velocidad y fluidez.
-                </p>
-                <div class="card__price">
-                $ 68000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 8 png.png" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Evolution
-                </div>
-                <p class="card__description">
-                Tabla de surf expoxy xtorsion 5'8 x 21.5, adecuada para principiantes ya q ofrecen mas flotabilidad, estabilidad y mayor facilidad para girar.
-                </p>
-                <div class="card__price">
-                $ 70000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__header">
-                <img src="/assets/product-img/img 9 png.jpg" alt="product image" class="card__img">
-                </div>
-                <div class="card__body">
-                <div class="card__title">
-                Longboard
-                </div>
-                <p class="card__description">
-                Tabla de surf mar cristal 6'soft alta densidad, esta diseñada para la estabilidad máxima, mayor volumen y mayor deslizamiento.
-                </p>
-                <div class="card__price">
-                $ 65000
-                </div>
-                <div class="card__date">
-                13/12/2022
-                </div>
-                </div>
-                <div class="card__footer">
-                <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
-                </div>
-                <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
-                </div>
-                </div>
-            </article>
+           
         </div>
     </section>
-
-
-
-
     <!-- ?=========================================accesorios========================================== -->
-    <section>
-        <h1 class="section-cards__category">
+    <!-- <section> -->
+        <!-- <h1 class="section-cards__category">
             ACCESORIOS
-        </h1>
+        </h1> -->
 
-        <div class="cards-container" id="card-container">
+        <!-- <div class="cards-container" id="card-container">
             <article class="card">
                 <div class="card__header">
                 <img src="/assets/product-img/img 11 png.png" alt="product image" class="card__img">
@@ -364,10 +118,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -393,10 +147,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -422,10 +176,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html"onclick="addToOrder(index)" >Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -451,10 +205,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -480,10 +234,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -509,10 +263,10 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="/pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
@@ -538,27 +292,17 @@
                 </div>
                 <div class="card__footer">
                 <div class="card__btn-buy-container">
-                <a class="card__btn-buy" href="">Comprar</a>
+                <a class="card__btn-buy" href="pages/order/order.html" onclick="addToOrder(index)">Comprar</a>
                 </div>
                 <div class="card__btn-container">
-                <a class="card__btn" href="">Detalle</a>
+                <a class="card__btn" href="/pages/product-detail/product-detail.html">Detalle</a>
                 </div>
                 </div>
             </article>
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    </section>
+    </section> -->
 </main>
 <div class="whatsapp-container">
     <a href=" https://walink.co/f5a1de " class="whatsapp-container__link">
@@ -624,11 +368,11 @@
     </ul>
     </div>
 </footer>
+
 <script src="/js/index.js"></script>
 <script src="/js/header.js"></script>
-<!-- <script src="/js/order.js"></script> -->
-
-
+<script src="/js/order.js"></script>
+<script src="/js/badge.js"></script>
 
 </body>
 </html>

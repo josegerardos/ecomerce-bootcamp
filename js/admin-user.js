@@ -1,4 +1,5 @@
-// let user = [
+
+// let usuarios = [
 // {
 // fullname: "admin admin",
 // email: "admin@email.com",
@@ -30,7 +31,10 @@
 // role:"USER_ROLE",
 // }
 // ]
-let user = JSON.parse (localStorage.getItem('user')) || [];
+
+
+
+let usuarios = JSON.parse (localStorage.getItem('usuarios')) || [];
 
 
 const userForm = document.getElementById('add-user');
@@ -44,14 +48,12 @@ let editIndex;
 function renderTableUser() {
 tableBodyUser.innerHTML = "";
 
-if(user.length === 0) {
+if(usuarios.length === 0) {
     tableBodyUser.innerHTML = `<tr class = "disabled"><td colspan="6"></td>NO SE ENCONTRARON PRODUCTOS</td></tr>`
     return
 }
 
-
-
-user.forEach((users, index) => {
+usuarios.forEach((users, index) => {
 
 const tableUser = ` <tr class="user">
                     <td class="user__fullname">${users.fullname}</td>
@@ -73,14 +75,14 @@ function addUser(evt) {
     const newUser = new FormData(evt.target);
     const newUserData = Object.fromEntries(newUser);
     if(editIndex >= 0){
-        user[editIndex] = newUserData;
+        usuarios[editIndex] = newUserData;
         showAlert(' ✔   El producto se edito correctamente', 'succes')
     } else {
-        user.push(newUserData);
+        usuarios.push(newUserData);
         showAlert(' ✔   El producto se agrego correctamente ', 'succes')
     }
 
-localStorage.setItem('user', JSON.stringify(user));
+localStorage.setItem('usuarios', JSON.stringify(usuarios));
 editIndex = undefined;
 submitBtnUser.classList.remove('edit-btn');
 submitBtnUser.innerText = 'Cargar usuario';
@@ -91,8 +93,8 @@ elements.name.focus();
 }
 
 function deleteUser(indice) {
-    user.splice(indice, 1);
-    localStorage.setItem('user', JSON.stringify(user));
+    usuarios.splice(indice, 1);
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
     showAlert(' ✔   Elemento borrado correctamente', 'succes')
     renderTableUser();
     }
@@ -101,7 +103,7 @@ function deleteUser(indice) {
     submitBtnUser.classList.add('edit-btn');
     submitBtnUser.innerText = 'Editar usuario'
     
-    let u = user[idx];
+    let u = usuarios[idx];
     const elementsEdit = userForm.elements;
     elementsEdit.fullname.value = u.fullname;
     elementsEdit.email.value = u.email;

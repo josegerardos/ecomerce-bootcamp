@@ -44,6 +44,7 @@ document.getElementById('admin-product').remove();
 document.getElementById('admin-user').remove();
 }
 localStorage.removeItem('currentUser');
+// localStorage.removeItem('order')
 renderHeaderLinks();
 }
 renderHeaderLinks()
